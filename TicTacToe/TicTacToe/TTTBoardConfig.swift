@@ -183,23 +183,21 @@ extension TTTBoardConfig {
     }
     
     func defenseMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {
-        guard !self.isEmpty else {
-            return nil
-        }
-        if (self.redCount <= 1) && !selectingRed  {
-            return nil
-        }
-        if (self.greenCount <= 1) && selectingRed {
-            return nil
-        }
-        
         let stateToCheck : TTTState = selectingRed ? .GreenSelected   : .RedSelected
+        let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
+        let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }.filter { $0.0 == 2 }
+        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveRowsStates)
+        return positionToSelect
+    }
+
+    func winningMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {
+        let stateToCheck : TTTState = selectingRed ?  .RedSelected : .GreenSelected
         
         let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
         let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }
-        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveRowsStates)
+        let consecutiveWinningRowsStates = consecutiveRowsStates.filter { $0.0 == 2 }
+        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveWinningRowsStates)
         return positionToSelect
-        
     }
 
     
@@ -228,13 +226,4 @@ extension TTTBoardConfig {
         
     }
     
-    func winningMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {
-        let stateToCheck : TTTState = selectingRed ?  .RedSelected : .GreenSelected
-        
-        let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
-        let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }
-        let consecutiveWinningRowsStates = consecutiveRowsStates.filter { $0.0 == 2 }
-        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveWinningRowsStates)
-        return positionToSelect
-    }
 }

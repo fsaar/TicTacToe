@@ -14,6 +14,7 @@
 		56F6DAF11D721AA50007E476 /* TTTBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAF01D721AA50007E476 /* TTTBoard.swift */; };
 		56F6DAF31D721B5B0007E476 /* TTTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAF21D721B5B0007E476 /* TTTCell.swift */; };
 		56F6DAF51D7309D90007E476 /* TTTBoardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAF41D7309D90007E476 /* TTTBoardConfig.swift */; };
+		56F6DB031D735DD00007E476 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DB011D735DD00007E476 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		56F6DAF01D721AA50007E476 /* TTTBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTBoard.swift; sourceTree = "<group>"; };
 		56F6DAF21D721B5B0007E476 /* TTTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTCell.swift; sourceTree = "<group>"; };
 		56F6DAF41D7309D90007E476 /* TTTBoardConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTBoardConfig.swift; sourceTree = "<group>"; };
+		56F6DB021D735DD00007E476 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,18 @@
 				56F6DAE21D7219EB0007E476 /* Main.storyboard */,
 				56F6DAE51D7219EB0007E476 /* Assets.xcassets */,
 				56F6DAEA1D7219EB0007E476 /* Info.plist */,
+				56F6DB001D735DD00007E476 /* en.lproj */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		56F6DB001D735DD00007E476 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				56F6DB011D735DD00007E476 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			path = Base.lproj/strings/en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F6DAE61D7219EB0007E476 /* Assets.xcassets in Resources */,
+				56F6DB031D735DD00007E476 /* Localizable.strings in Resources */,
 				56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +170,14 @@
 				56F6DAE31D7219EB0007E476 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56F6DB011D735DD00007E476 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F6DB021D735DD00007E476 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

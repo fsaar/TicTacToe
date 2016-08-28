@@ -19,6 +19,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-Ui-g5B" userLabel="titleLabelView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3r-Tf-i62" userLabel="titleLabel">
+                                        <rect key="frame" x="97.5" y="45" width="125.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="F3r-Tf-i62" firstAttribute="centerY" secondItem="H9t-Ui-g5B" secondAttribute="centerY" id="IGi-la-nd7"/>
+                                    <constraint firstItem="F3r-Tf-i62" firstAttribute="centerX" secondItem="H9t-Ui-g5B" secondAttribute="centerX" id="zLm-xy-T5K"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PP2-Bz-0Rj" userLabel="board" customClass="TTTBoard" customModule="TicTacToe" customModuleProvider="target">
                                 <rect key="frame" x="16" y="140" width="288" height="288"/>
                                 <subviews>
@@ -127,17 +143,24 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxk-p4-WjO">
                                         <rect key="frame" x="107" y="20" width="34" height="30"/>
-                                        <state key="normal" title="Start"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="restart" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm5-fb-Xo7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xW-3O-dKt">
-                                        <rect key="frame" x="86" y="67" width="76" height="30"/>
-                                        <state key="normal" title="User starts"/>
+                                        <rect key="frame" x="95" y="67" width="58" height="30"/>
+                                        <state key="normal" title="AI starts">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="machineStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qk3-tg-n8H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="7xW-3O-dKt" firstAttribute="centerX" secondItem="Lcf-Pq-uWj" secondAttribute="centerX" id="92U-HL-ND3"/>
                                     <constraint firstItem="Oxk-p4-WjO" firstAttribute="top" secondItem="Lcf-Pq-uWj" secondAttribute="top" constant="20" id="Id8-DS-qy2"/>
@@ -147,19 +170,24 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PP2-Bz-0Rj" firstAttribute="top" secondItem="H9t-Ui-g5B" secondAttribute="bottom" id="6cd-U3-oiG"/>
                             <constraint firstItem="Lcf-Pq-uWj" firstAttribute="top" secondItem="PP2-Bz-0Rj" secondAttribute="bottom" constant="15" id="Jyk-lF-KSg"/>
                             <constraint firstItem="PP2-Bz-0Rj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NVq-5K-bjt"/>
                             <constraint firstAttribute="leadingMargin" secondItem="PP2-Bz-0Rj" secondAttribute="leading" id="RkX-jI-SXa"/>
                             <constraint firstItem="PP2-Bz-0Rj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sm8-sv-9Ed"/>
+                            <constraint firstAttribute="trailing" secondItem="H9t-Ui-g5B" secondAttribute="trailing" id="WHu-nm-lQg"/>
+                            <constraint firstItem="H9t-Ui-g5B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XDA-Ae-7Wu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lcf-Pq-uWj" secondAttribute="trailing" constant="20" id="ggO-jz-O5B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PP2-Bz-0Rj" secondAttribute="trailing" id="lyz-UD-dsh"/>
+                            <constraint firstItem="H9t-Ui-g5B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sX8-9F-ph6"/>
                             <constraint firstItem="Lcf-Pq-uWj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="wjo-Tq-Ucw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="board" destination="PP2-Bz-0Rj" id="dix-yH-OaY"/>
+                        <outlet property="machineStartsButton" destination="7xW-3O-dKt" id="fic-rM-DMr"/>
                         <outlet property="startButton" destination="Oxk-p4-WjO" id="R69-B2-0tq"/>
                     </connections>
                 </viewController>

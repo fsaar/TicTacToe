@@ -1,0 +1,9 @@
+/* 
+  LocalizedStrings.strings
+  TicTacToe
+
+  Created by Frank Saar on 28/08/2016.
+  Copyright © 2016 SAMedialabs. All rights reserved.
+*/
+"start_button_copy" = "Start";
+"computer_starts_button_copy" = "Computer starts";

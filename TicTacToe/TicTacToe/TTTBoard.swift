@@ -42,7 +42,6 @@ public class TTTBoard : UIView {
     override public func awakeFromNib() {
         super.awakeFromNib()
         self.clipsToBounds = true
-        self.layer.cornerRadius = 10
         self.layer.borderColor = self.cells.first?.layer.borderColor
         setupCellPositions()
         setupTouchHandler() 

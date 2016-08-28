@@ -7,6 +7,7 @@ class TTTBoardController: UIViewController {
     @IBOutlet weak var board : TTTBoard!
     private var humanIsRed = true
     @IBOutlet private var startButton : UIButton!
+    @IBOutlet private var machineStartsButton : UIButton!
     private var state : TTTBoardControllerState = .Started  {
         didSet {
             switch state {
@@ -22,17 +23,36 @@ class TTTBoardController: UIViewController {
         super.viewDidLoad()
         self.state = .Started
         self.board.delegate = self
+
+        self.startButton.setTitle(NSLocalizedString("start_button_copy", comment: ""), forState: .Normal)
+        self.machineStartsButton.setTitle(NSLocalizedString("computer_starts_button_copy", comment: ""), forState: .Normal)
     }
     
     @IBAction func restart() {
         self.state = .Started
     }
     
+    @IBAction func machineStart() {
+        self.state = .Started
+        playMachine()
+    }
 }
 
 /// MARK: TTTBoardDelegate
 
 extension TTTBoardController : TTTBoardDelegate {
+    
+    func playMachine() {
+        var machinePosition = board.config.winningMove(forPartySelectingRed: !humanIsRed) ?? board.config.defenseMove(forPartySelectingRed: !humanIsRed)
+        if case .None = machinePosition {
+            machinePosition = board.config.attackMove(forPartySelectingRed: !humanIsRed)
+        }
+        if let position = machinePosition
+        {
+            play(board, player: .Machine, config: board.config, position: position)
+        }
+
+    }
     func play(board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
     {
         let newHumanState : TTTState = humanIsRed ? .RedSelected : .GreenSelected
@@ -51,20 +71,7 @@ extension TTTBoardController : TTTBoardDelegate {
             play(board, player: player, config: config, position: position)
             if self.state == .Started
             {
-                var machinePosition = board.config.winningMove(forPartySelectingRed: !humanIsRed) ?? board.config.defenseMove(forPartySelectingRed: !humanIsRed)
-                if case .None = machinePosition {
-                    machinePosition = board.config.attackMove(forPartySelectingRed: !humanIsRed)
-                    print("selecting attack move \(machinePosition)")
-                }
-                else
-                {
-                    print("selecting defensive move \(machinePosition)")
-                }
-                print(machinePosition)
-                if let position = machinePosition
-                {
-                    play(board, player: .Machine, config: board.config, position: position)
-                }
+                playMachine()   
             }
             
 
