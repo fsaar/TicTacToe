@@ -10,12 +10,12 @@ import UIKit
 
 
 @objc enum TTTBoardPlayer : Int {
-    case Machine
-    case Human
+    case machine
+    case human
 }
 
 protocol TTTBoardDelegate : class {
-    func evaluateBoardChange(board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
+    func evaluateBoardChange(_ board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
 }
 
 public class TTTBoard : UIView {
@@ -46,21 +46,21 @@ public class TTTBoard : UIView {
         setupCellPositions()
         setupTouchHandler() 
     }
-    func cellTouchHandler(recognizer : UITapGestureRecognizer) {
-        if let cell = recognizer.view as? TTTCell where cell.state == .Undefined {
-            self.delegate?.evaluateBoardChange(self, player: .Human, config: config, position: cell.position)
+    func cellTouchHandler(_ recognizer : UITapGestureRecognizer) {
+        if let cell = recognizer.view as? TTTCell , cell.state == .undefined {
+            self.delegate?.evaluateBoardChange(self, player: .human, config: config, position: cell.position)
         }
     }
     
     
-    func highlight(positions : [TTTBoardPosition]) {
+    func highlight(_ positions : [TTTBoardPosition]) {
         let indexList = positions.map { $0.column + $0.row * 3 }
         let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
 
         cells.forEach { $0.highlight() }
     }
 
-    func unHighlight(positions : [TTTBoardPosition]) {
+    func unHighlight(_ positions : [TTTBoardPosition]) {
         let indexList = positions.map { $0.column + $0.row * 3 }
         let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
         cells.forEach { $0.unHighlight() }
@@ -75,7 +75,7 @@ public class TTTBoard : UIView {
 /// MARK : Setup
 private extension TTTBoard {
     func setupCellPositions() {
-        let sortedCells = cells.sort { cell1,cell2 in
+        let sortedCells = cells.sorted { cell1,cell2 in
             let isLeftOf =  cell1.frame.origin.x < cell2.frame.origin.x
             let isInSameRow = cell1.frame.origin.y == cell2.frame.origin.y
             let isAbove = cell1.frame.origin.y < cell2.frame.origin.y

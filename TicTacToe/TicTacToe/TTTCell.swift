@@ -5,9 +5,9 @@ extension TTTState {
     func stateImage() -> UIImage? {
         var image : UIImage?
         switch self {
-        case .GreenSelected:
+        case .greenSelected:
             image = UIImage(named: "Green")
-        case .RedSelected:
+        case .redSelected:
             image = UIImage(named: "Red")
         default:
             break
@@ -19,7 +19,7 @@ extension TTTState {
 
 public class TTTCell : UIImageView {
     
-    var state = TTTState.Undefined {
+    var state = TTTState.undefined {
         didSet {
             self.unHighlight()
             self.image  = state.stateImage()
@@ -30,19 +30,19 @@ public class TTTCell : UIImageView {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.clearColor()
-        self.contentMode = .ScaleAspectFit
-        self.userInteractionEnabled  = true
-        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.backgroundColor = UIColor.clear
+        self.contentMode = .scaleAspectFit
+        self.isUserInteractionEnabled  = true
+        self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 1
         self.clipsToBounds = false
     }
     
     func highlight() {
-        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor.white
     }
 
     func unHighlight() {
-        self.backgroundColor = UIColor.clearColor()
+        self.backgroundColor = UIColor.clear
     }
 }
