@@ -57,17 +57,13 @@ public class TTTBoard : UIView {
         let indexList = positions.map { $0.column + $0.row * 3 }
         let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
 
-        for cell in cells {
-            cell.highlight()
-        }
+        cells.forEach { $0.highlight() }
     }
 
     func unHighlight(positions : [TTTBoardPosition]) {
         let indexList = positions.map { $0.column + $0.row * 3 }
         let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
-        for cell in cells {
-            cell.unHighlight()
-        }
+        cells.forEach { $0.unHighlight() }
     }
 
     func clear() {
