@@ -41,8 +41,11 @@ public class TTTBoard : UIView {
     
     override public func awakeFromNib() {
         super.awakeFromNib()
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 10
+        self.layer.borderColor = self.cells.first?.layer.borderColor
         setupCellPositions()
-        setupTouchHandler()
+        setupTouchHandler() 
     }
     func cellTouchHandler(recognizer : UITapGestureRecognizer) {
         if let cell = recognizer.view as? TTTCell where cell.state == .Undefined {

@@ -128,6 +128,8 @@ public struct TTTBoardConfig : Equatable {
     }
 }
 
+// MARK: Move Logic
+
 extension TTTBoardConfig {
     private func consecutiveCellStateCount(row : [TTTBoardPosition],state : TTTState) -> Int {
         var count = 0
@@ -144,7 +146,6 @@ extension TTTBoardConfig {
         }
         return count
     }
-    
     
     
     private func nextUndefinedPosition(startingAtIndex startIndex : Int) -> TTTBoardPosition? {
@@ -165,6 +166,22 @@ extension TTTBoardConfig {
         return position
     }
     
+    private func findPositionToSelect(inRowStates rowStates: [(Int,[TTTBoardPosition])]) -> TTTBoardPosition?
+    {
+        var positionToSelect : TTTBoardPosition? = nil
+
+        for consecutiveRowsState in rowStates where positionToSelect == nil {
+            let positions = consecutiveRowsState.1
+            let emptyPosition = positions.filter { self[$0] == .Undefined }.first
+            if let emptyPosition =  emptyPosition
+            {
+                positionToSelect = emptyPosition
+            }
+        }
+        return positionToSelect
+
+    }
+    
     func defenseMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {
         guard !self.isEmpty else {
             return nil
@@ -176,21 +193,11 @@ extension TTTBoardConfig {
             return nil
         }
         
-        
         let stateToCheck : TTTState = selectingRed ? .GreenSelected   : .RedSelected
         
-        var positionToSelect : TTTBoardPosition? = nil
         let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
         let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }
-        
-        for consecutiveRowsState in consecutiveRowsStates where positionToSelect == nil {
-            let positions = consecutiveRowsState.1
-            let emptyPosition = positions.filter { self[$0] == .Undefined }.first
-            if let emptyPosition =  emptyPosition
-            {
-                positionToSelect = emptyPosition
-            }
-        }
+        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveRowsStates)
         return positionToSelect
         
     }
@@ -216,15 +223,8 @@ extension TTTBoardConfig {
         
         let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
         let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }
-        var selectedPosition : TTTBoardPosition?
-        for consecutiveRowState in consecutiveRowsStates where selectedPosition == nil {
-            let emptyPosition = consecutiveRowState.1.filter { self[$0] == .Undefined }.first
-            if let emptyPosition =  emptyPosition
-            {
-                selectedPosition = emptyPosition
-            }
-        }
-        return selectedPosition
+        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveRowsStates)
+        return positionToSelect
         
     }
     
@@ -234,16 +234,7 @@ extension TTTBoardConfig {
         let consecutiveStates = self.validationRows.map { self.consecutiveCellStateCount($0, state: stateToCheck) }
         let consecutiveRowsStates = zip(consecutiveStates,self.validationRows).sort { $0.0 > $1.0 }
         let consecutiveWinningRowsStates = consecutiveRowsStates.filter { $0.0 == 2 }
-
-        var selectedPosition : TTTBoardPosition?
-        for consecutiveRowState in consecutiveWinningRowsStates where selectedPosition == nil {
-            let emptyPosition = consecutiveRowState.1.filter { self[$0] == .Undefined }.first
-            if let emptyPosition =  emptyPosition
-            {
-                selectedPosition = emptyPosition
-            }
-        }
-        return selectedPosition
-        
+        let positionToSelect  = findPositionToSelect(inRowStates: consecutiveWinningRowsStates)
+        return positionToSelect
     }
 }
