@@ -1,7 +1,6 @@
 
 import UIKit
 
-
 extension TTTState {
     func stateImage() -> UIImage? {
         var image : UIImage?
@@ -46,8 +45,4 @@ public class TTTCell : UIImageView {
     func unHighlight() {
         self.backgroundColor = UIColor.clearColor()
     }
-
-    
-    
-    
 }

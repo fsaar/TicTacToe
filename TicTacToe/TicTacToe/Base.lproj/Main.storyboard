@@ -144,7 +144,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxk-p4-WjO">
                                         <rect key="frame" x="107" y="20" width="34" height="30"/>
                                         <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="restart" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm5-fb-Xo7"/>
@@ -153,7 +153,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xW-3O-dKt">
                                         <rect key="frame" x="95" y="67" width="58" height="30"/>
                                         <state key="normal" title="AI starts">
-                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="machineStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qk3-tg-n8H"/>

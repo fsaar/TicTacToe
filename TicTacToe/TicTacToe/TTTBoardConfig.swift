@@ -172,14 +172,9 @@ extension TTTBoardConfig {
 
         for consecutiveRowsState in rowStates where positionToSelect == nil {
             let positions = consecutiveRowsState.1
-            let emptyPosition = positions.filter { self[$0] == .Undefined }.first
-            if let emptyPosition =  emptyPosition
-            {
-                positionToSelect = emptyPosition
-            }
+            positionToSelect = positions.filter { self[$0] == .Undefined }.first
         }
         return positionToSelect
-
     }
     
     func defenseMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {

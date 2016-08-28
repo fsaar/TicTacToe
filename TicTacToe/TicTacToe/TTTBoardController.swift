@@ -42,6 +42,19 @@ class TTTBoardController: UIViewController {
 
 extension TTTBoardController : TTTBoardDelegate {
     
+    func evaluateBoardChange(board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
+    {
+        play(board, player: player, config: config, position: position)
+        if self.state != .Ended
+        {
+            playMachine()   
+        }
+    }
+}
+
+/// MARK: Private
+
+private extension TTTBoardController {
     func playMachine() {
         var machinePosition = board.config.winningMove(forPartySelectingRed: !humanIsRed) ?? board.config.defenseMove(forPartySelectingRed: !humanIsRed)
         if case .None = machinePosition {
@@ -51,7 +64,7 @@ extension TTTBoardController : TTTBoardDelegate {
         {
             play(board, player: .Machine, config: board.config, position: position)
         }
-
+        
     }
     func play(board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
     {
@@ -64,16 +77,5 @@ extension TTTBoardController : TTTBoardDelegate {
             board.highlight(winningRow)
             self.state = .Ended
         }
-    }
-    
-    func evaluateBoardChange(board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
-    {
-            play(board, player: player, config: config, position: position)
-            if self.state == .Started
-            {
-                playMachine()   
-            }
-            
-
     }
 }
