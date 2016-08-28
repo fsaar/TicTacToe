@@ -33,10 +33,10 @@ public class TTTBoard : UIView {
     
     
     public subscript(position : TTTBoardPosition) -> TTTCell? {
-        guard position.column < 3 && position.row < 3 && position.column >= 0 && position.row >= 0 else {
+        guard position.isValid else {
             return nil
         }
-        return cells?[Int(position.column + position.row * 3)]
+        return cells?[position.toIndex()]
     }
     
     override public func awakeFromNib() {
@@ -54,15 +54,12 @@ public class TTTBoard : UIView {
     
     
     func highlight(_ positions : [TTTBoardPosition]) {
-        let indexList = positions.map { $0.column + $0.row * 3 }
-        let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
-
+        let cells = self.cells.filter { positions.contains($0.position) }
         cells.forEach { $0.highlight() }
     }
 
     func unHighlight(_ positions : [TTTBoardPosition]) {
-        let indexList = positions.map { $0.column + $0.row * 3 }
-        let cells = self.cells.filter { indexList.contains($0.position.column + $0.position.row * 3 ) }
+        let cells = self.cells.filter { positions.contains($0.position) }
         cells.forEach { $0.unHighlight() }
     }
 

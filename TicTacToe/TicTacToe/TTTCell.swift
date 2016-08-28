@@ -26,7 +26,7 @@ public class TTTCell : UIImageView {
         }
     }
     
-    var position : TTTBoardPosition = (column:-1,row:-1)
+    var position = TTTBoardPosition(column:-1,row:-1)
     
     override public func awakeFromNib() {
         super.awakeFromNib()

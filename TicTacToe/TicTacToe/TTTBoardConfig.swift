@@ -20,20 +20,47 @@ public enum TTTState {
     case redSelected
 }
 
-public typealias TTTBoardPosition = (column:Int, row:Int)
+
+
+public struct TTTBoardPosition : Equatable {
+    var column : Int
+    let row : Int
+    var isValid : Bool {
+        let valid =  (0...2 ~= self.column) && (0...2 ~= self.row)
+        return valid
+    }
+    
+    static public func ==(lhs : TTTBoardPosition, rhs :  TTTBoardPosition) -> Bool {
+        return (lhs.column,lhs.row) == (rhs.column,rhs.row)
+    }
+    
+    func toIndex() -> Int {
+        return row * 3 + column
+    }
+    
+    init( fromIndex index : Int) {
+        column = index % 3
+        row = index / 3
+    }
+    init (column : Int, row : Int) {
+        self.column = column
+        self.row = row
+    }
+}
+
 
 public class TTTBoardPositionGenerator: IteratorProtocol {
     var currentPos: TTTBoardPosition
     init() {
-        currentPos = (-1,0)
+        currentPos = TTTBoardPosition(column: -1 , row:0)
     }
     public func next() -> TTTBoardPosition? {
-        currentPos.column += 1
+        currentPos = TTTBoardPosition(column: currentPos.column + 1 , row: currentPos.row)
         if currentPos.column < 3  {
             return currentPos
         }
+        currentPos = TTTBoardPosition(column: 0 , row: currentPos.row + 1)
         currentPos.column = 0
-        currentPos.row += 1
         
         if (currentPos.row < 3) {
             return currentPos
@@ -50,7 +77,7 @@ public struct TTTBoardPositionSequence : Sequence {
 
 
 public struct TTTBoardConfig : Equatable {
-    public func ==(lhs: TTTBoardConfig, rhs: TTTBoardConfig) -> Bool {
+    public static func ==(lhs: TTTBoardConfig, rhs: TTTBoardConfig) -> Bool {
         return lhs.board == rhs.board
     }
 
@@ -100,16 +127,16 @@ public struct TTTBoardConfig : Equatable {
         return self[TTTBoardPosition(column:column, row: row)]
     }
     subscript(position : TTTBoardPosition) -> TTTState? {
-        guard position.column < 3 && position.row < 3 && position.column >= 0 && position.row >= 0 else {
+        guard position.isValid else {
             return nil
         }
-        return board[Int(position.column + position.row * 3)]
+        return board[position.toIndex()]
     }
     
     func updateConfig(withConfig config : TTTBoardConfig, newState: TTTState, atPosition position : TTTBoardPosition) -> TTTBoardConfig
     {
         var newBoard = board
-        let index = position.column + position.row*3
+        let index = position.toIndex()
         newBoard[index] = newState
         return TTTBoardConfig(board: newBoard)
     }
@@ -156,13 +183,11 @@ extension TTTBoardConfig {
         var index = startIndex
         var position : TTTBoardPosition?
         while position == nil {
-            let column = index % 3
-            let row = index / 3
-            let newPosition = TTTBoardPosition(column:column,row:row)
+            let newPosition = TTTBoardPosition(fromIndex: index)
             if self[newPosition] == .undefined {
                 position = newPosition
             }
-            index += 1
+            index = (index+1) % 9
         }
         return position
     }
