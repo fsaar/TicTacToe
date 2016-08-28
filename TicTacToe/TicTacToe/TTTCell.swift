@@ -26,11 +26,11 @@ public class TTTCell : UIImageView {
         }
     }
     
-    var position : TTTBoardPosition = (-1,-1)
+    var position : TTTBoardPosition = (column:-1,row:-1)
     
     override public func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = .clear
         self.contentMode = .scaleAspectFit
         self.isUserInteractionEnabled  = true
         self.layer.borderColor = UIColor.black.cgColor
@@ -39,10 +39,10 @@ public class TTTCell : UIImageView {
     }
     
     func highlight() {
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = .white
     }
 
     func unHighlight() {
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = .clear
     }
 }

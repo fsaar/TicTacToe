@@ -48,11 +48,12 @@ public struct TTTBoardPositionSequence : Sequence {
     }
 }
 
-public func ==(lhs: TTTBoardConfig, rhs: TTTBoardConfig) -> Bool {
-    return lhs.board == rhs.board
-}
 
 public struct TTTBoardConfig : Equatable {
+    public func ==(lhs: TTTBoardConfig, rhs: TTTBoardConfig) -> Bool {
+        return lhs.board == rhs.board
+    }
+
     private let validationRows : [[TTTBoardPosition]] = {
         let firstRow = [TTTBoardPosition(column:0,row:0),TTTBoardPosition(column:1,row:0),TTTBoardPosition(column:2,row:0)]
         let secondRow = [TTTBoardPosition(column:0,row:1),TTTBoardPosition(column:1,row:1),TTTBoardPosition(column:2,row:1)]
