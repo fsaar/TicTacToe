@@ -56,13 +56,13 @@ extension TTTBoardController : TTTBoardDelegate {
 
 private extension TTTBoardController {
     func playMachine() {
-        var machinePosition = board.config.winningMove(forPartySelectingRed: !humanIsRed) ?? board.config.defenseMove(forPartySelectingRed: !humanIsRed)
-        if case .None = machinePosition {
-            machinePosition = board.config.attackMove(forPartySelectingRed: !humanIsRed)
-        }
-        if let position = machinePosition
+        let config = board.config
+        let machinePosition = config.winningMove(forPartySelectingRed: !humanIsRed) ??
+                                config.defenseMove(forPartySelectingRed: !humanIsRed) ??
+                                config.attackMove(forPartySelectingRed: !humanIsRed)
+        if let machinePosition = machinePosition
         {
-            play(board, player: .Machine, config: board.config, position: position)
+            play(board, player: .Machine, config: board.config, position: machinePosition)
         }
         
     }
