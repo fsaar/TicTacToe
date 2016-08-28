@@ -71,7 +71,7 @@ private extension TTTBoardController {
         let newHumanState : TTTState = humanIsRed ? .redSelected : .greenSelected
         let newMachineState : TTTState = humanIsRed ? .greenSelected : .redSelected
         let newState = player == .human ? newHumanState : newMachineState
-        let newConfig = config.updateConfig(withConfig: config, newState: newState, atPosition: position)
+        let newConfig = TTTBoardConfig(board: config.states, newState: newState, atPosition: position)
         board.config = newConfig
         if let winningRow = board.config.isComplete() {
             board.highlight(winningRow)

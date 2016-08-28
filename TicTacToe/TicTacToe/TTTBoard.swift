@@ -24,7 +24,7 @@ public class TTTBoard : UIView {
     var config = TTTBoardConfig.empty() {
         didSet {
             let positions = TTTBoardPositionSequence().map { $0 }
-            let statePositions = zip(config.board,positions)
+            let statePositions = zip(config.states,positions)
             for (state,position) in statePositions {
                 self[position]?.state = state
             }

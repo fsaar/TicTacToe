@@ -78,7 +78,7 @@ public struct TTTBoardPositionSequence : Sequence {
 
 public struct TTTBoardConfig : Equatable {
     public static func ==(lhs: TTTBoardConfig, rhs: TTTBoardConfig) -> Bool {
-        return lhs.board == rhs.board
+        return lhs.states == rhs.states
     }
 
     private let validationRows : [[TTTBoardPosition]] = {
@@ -108,21 +108,21 @@ public struct TTTBoardConfig : Equatable {
     
     var isEmpty : Bool {
         get {
-           return  self.board.filter { $0 != .undefined }.count == self.board.count
+           return  self.states.filter { $0 != .undefined }.count == self.states.count
         }
     }
     private var redCount : Int {
         get {
-            return  self.board.filter { $0 == .redSelected }.count
+            return  self.states.filter { $0 == .redSelected }.count
         }
     }
     private var greenCount : Int {
         get {
-            return  self.board.filter { $0 == .greenSelected }.count
+            return  self.states.filter { $0 == .greenSelected }.count
         }
     }
     
-    let board : [TTTState]
+    let states : [TTTState]
     subscript(column : Int, row : Int) -> TTTState? {
         return self[TTTBoardPosition(column:column, row: row)]
     }
@@ -130,15 +130,18 @@ public struct TTTBoardConfig : Equatable {
         guard position.isValid else {
             return nil
         }
-        return board[position.toIndex()]
+        return states[position.toIndex()]
     }
     
-    func updateConfig(withConfig config : TTTBoardConfig, newState: TTTState, atPosition position : TTTBoardPosition) -> TTTBoardConfig
+    init(board : [TTTState], newState: TTTState, atPosition position : TTTBoardPosition)
     {
         var newBoard = board
-        let index = position.toIndex()
-        newBoard[index] = newState
-        return TTTBoardConfig(board: newBoard)
+        newBoard[position.toIndex()] = newState
+        self.states = newBoard
+    }
+    init(board : [TTTState])
+    {
+        self.states = board
     }
     
     func isComplete() -> [TTTBoardPosition]? {
