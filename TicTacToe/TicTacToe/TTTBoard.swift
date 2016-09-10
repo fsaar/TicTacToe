@@ -20,7 +20,7 @@ protocol TTTBoardDelegate : class {
 
 public class TTTBoard : UIView {
     weak var delegate : TTTBoardDelegate?
-    @IBOutlet private var cells : [TTTCell]!
+    @IBOutlet var cells : [TTTCell]!
     var config = TTTBoardConfig.empty() {
         didSet {
             let positions = TTTBoardPositionSequence().map { $0 }
@@ -72,7 +72,7 @@ public class TTTBoard : UIView {
 /// MARK : Setup
 private extension TTTBoard {
     func setupCellPositions() {
-        let sortedCells = cells.sorted { cell1,cell2 in
+        let sortedCells = self.cells.sorted { cell1,cell2 in
             let isLeftOf =  cell1.frame.origin.x < cell2.frame.origin.x
             let isInSameRow = cell1.frame.origin.y == cell2.frame.origin.y
             let isAbove = cell1.frame.origin.y < cell2.frame.origin.y

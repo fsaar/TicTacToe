@@ -81,7 +81,7 @@ public struct TTTBoardConfig : Equatable {
         return lhs.states == rhs.states
     }
 
-    private let validationRows : [[TTTBoardPosition]] = {
+    let validationRows : [[TTTBoardPosition]] = {
         let firstRow = [TTTBoardPosition(column:0,row:0),TTTBoardPosition(column:1,row:0),TTTBoardPosition(column:2,row:0)]
         let secondRow = [TTTBoardPosition(column:0,row:1),TTTBoardPosition(column:1,row:1),TTTBoardPosition(column:2,row:1)]
         let thirdRow = [TTTBoardPosition(column:0,row:2),TTTBoardPosition(column:1,row:2),TTTBoardPosition(column:2,row:2)]
@@ -111,12 +111,12 @@ public struct TTTBoardConfig : Equatable {
            return  self.states.filter { $0 != .undefined }.count == self.states.count
         }
     }
-    private var redCount : Int {
+    var redCount : Int {
         get {
             return  self.states.filter { $0 == .redSelected }.count
         }
     }
-    private var greenCount : Int {
+    var greenCount : Int {
         get {
             return  self.states.filter { $0 == .greenSelected }.count
         }

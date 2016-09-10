@@ -5,10 +5,10 @@ import UIKit
 
 class TTTBoardController: UIViewController {
     @IBOutlet weak var board : TTTBoard!
-    private var humanIsRed = true
+    var humanIsRed = true
     @IBOutlet private var startButton : UIButton!
     @IBOutlet private var machineStartsButton : UIButton!
-    private var state : TTTBoardControllerState = .started  {
+    var state : TTTBoardControllerState = .started  {
         didSet {
             switch state {
             case .started:
