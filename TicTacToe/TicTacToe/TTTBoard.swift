@@ -20,7 +20,7 @@ protocol TTTBoardDelegate : class {
 
 public class TTTBoard : UIView {
     weak var delegate : TTTBoardDelegate?
-    @IBOutlet private var cells : [TTTCell]!
+    @IBOutlet var cells : [TTTCell]!
     var config = TTTBoardConfig.empty() {
         didSet {
             let positions = TTTBoardPositionSequence().map { $0 }

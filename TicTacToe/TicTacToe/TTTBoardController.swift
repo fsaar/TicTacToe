@@ -5,10 +5,11 @@ import UIKit
 
 class TTTBoardController: UIViewController {
     @IBOutlet weak var board : TTTBoard!
-    private var humanIsRed = true
+    var humanIsRed = true
     @IBOutlet private var startButton : UIButton!
     @IBOutlet private var machineStartsButton : UIButton!
-    private var state : TTTBoardControllerState = .started  {
+    let backendClient = TTTBackendClient()
+    var state : TTTBoardControllerState = .started  {
         didSet {
             switch state {
             case .started:
@@ -21,6 +22,7 @@ class TTTBoardController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.state = .started
         self.board.delegate = self
 
@@ -56,24 +58,26 @@ extension TTTBoardController : TTTBoardDelegate {
 
 private extension TTTBoardController {
     func playMachine() {
-        let config = board.config
-        let machinePosition = config.winningMove(forPartySelectingRed: !humanIsRed) ??
-                                config.defenseMove(forPartySelectingRed: !humanIsRed) ??
-                                config.attackMove(forPartySelectingRed: !humanIsRed)
-        if let machinePosition = machinePosition
-        {
-            play(board, player: .machine, config: board.config, position: machinePosition)
+        backendClient.config(forStates: board.config.configString) { [weak self] configString in
+            if let configString = configString {
+                let config = TTTBoardConfig(configString: configString)
+                self?.board.config = config
+                self?.evaluateBoard()
+            }
         }
-        
     }
     func play(_ board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
     {
-        let newHumanState : TTTState = humanIsRed ? .redSelected : .greenSelected
-        let newMachineState : TTTState = humanIsRed ? .greenSelected : .redSelected
+        let newHumanState : TTTState = self.humanIsRed ? .redSelected : .greenSelected
+        let newMachineState : TTTState = self.humanIsRed ? .greenSelected : .redSelected
         let newState = player == .human ? newHumanState : newMachineState
-        let newConfig = TTTBoardConfig(board: config.states, newState: newState, atPosition: position)
+        let newConfig = TTTBoardConfig(states: config.states, newState: newState, atPosition: position)
         board.config = newConfig
-        if let winningRow = board.config.isComplete() {
+        evaluateBoard()
+    }
+    
+    private func evaluateBoard() {
+        if let winningRow = board.config.isComplete {
             board.highlight(winningRow)
             self.state = .ended
         }

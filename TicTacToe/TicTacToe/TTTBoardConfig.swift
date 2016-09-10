@@ -81,7 +81,7 @@ public struct TTTBoardConfig : Equatable {
         return lhs.states == rhs.states
     }
 
-    private let validationRows : [[TTTBoardPosition]] = {
+    let validationRows : [[TTTBoardPosition]] = {
         let firstRow = [TTTBoardPosition(column:0,row:0),TTTBoardPosition(column:1,row:0),TTTBoardPosition(column:2,row:0)]
         let secondRow = [TTTBoardPosition(column:0,row:1),TTTBoardPosition(column:1,row:1),TTTBoardPosition(column:2,row:1)]
         let thirdRow = [TTTBoardPosition(column:0,row:2),TTTBoardPosition(column:1,row:2),TTTBoardPosition(column:2,row:2)]
@@ -94,6 +94,7 @@ public struct TTTBoardConfig : Equatable {
         return rows
     }()
     
+    
     private func isComplete(_ row : [TTTBoardPosition]) -> Bool {
         let redCount = row.filter { self[$0] == .redSelected }.count
         let greenCount =  row.filter { self[$0] == .greenSelected }.count
@@ -103,7 +104,40 @@ public struct TTTBoardConfig : Equatable {
     
     static func empty() -> TTTBoardConfig {
         let emptyStates = (1...9).map { _ in return TTTState.undefined }
-        return TTTBoardConfig(board: emptyStates)
+        return TTTBoardConfig(states: emptyStates)
+    }
+    
+    static func codeForState(state : TTTState) -> String {
+        switch state {
+        case TTTState.undefined:
+            return "-"
+        case TTTState.greenSelected:
+            return "O"
+        case TTTState.redSelected:
+            return "X"
+        }
+    }
+    static func stateForCode(code : String) -> TTTState {
+        switch code {
+        case "O":
+            return .greenSelected
+        case "X":
+            return .redSelected
+        case "-":
+            fallthrough
+        default:
+            return .undefined
+
+        }
+        
+    }
+    
+    var configString : String {
+        get {
+            let configStateList = self.states.map (TTTBoardConfig.codeForState)
+            let configString = configStateList.joined(separator: "")
+            return configString
+        }
     }
     
     var isEmpty : Bool {
@@ -111,12 +145,12 @@ public struct TTTBoardConfig : Equatable {
            return  self.states.filter { $0 != .undefined }.count == self.states.count
         }
     }
-    private var redCount : Int {
+    var redCount : Int {
         get {
             return  self.states.filter { $0 == .redSelected }.count
         }
     }
-    private var greenCount : Int {
+    var greenCount : Int {
         get {
             return  self.states.filter { $0 == .greenSelected }.count
         }
@@ -133,18 +167,22 @@ public struct TTTBoardConfig : Equatable {
         return states[position.toIndex()]
     }
     
-    init(board : [TTTState], newState: TTTState, atPosition position : TTTBoardPosition)
+    init(states : [TTTState], newState: TTTState, atPosition position : TTTBoardPosition)
     {
-        var newBoard = board
-        newBoard[position.toIndex()] = newState
-        self.states = newBoard
+        var newStates = states
+        newStates[position.toIndex()] = newState
+        self.states = newStates
     }
-    init(board : [TTTState])
+    init(states : [TTTState])
     {
-        self.states = board
+        self.states = states
     }
     
-    func isComplete() -> [TTTBoardPosition]? {
+    init(configString : String) {
+        self.states = configString.characters.map { TTTBoardConfig.stateForCode(code:"\($0)") }
+    }
+    
+    var isComplete : [TTTBoardPosition]? {
         var isComplete = false
         var completedRow : [TTTBoardPosition]?
         for row in self.validationRows where !isComplete {
@@ -180,7 +218,7 @@ extension TTTBoardConfig {
     
     
     private func nextUndefinedPosition(startingAtIndex startIndex : Int) -> TTTBoardPosition? {
-        guard self.isComplete() == nil else {
+        guard self.isComplete == nil else {
             return nil
         }
         var index = startIndex
