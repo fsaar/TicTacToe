@@ -18,25 +18,20 @@ protocol TTTBoardDelegate : class {
     func evaluateBoardChange(_ board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
 }
 
+extension Selector {
+    static let cellTouchHandler : Selector = #selector(TTTBoard.cellTouchHandler(_ :))
+}
+
+
 public class TTTBoard : UIView {
     weak var delegate : TTTBoardDelegate?
     @IBOutlet var cells : [TTTCell]!
     var config = TTTBoardConfig.empty() {
         didSet {
-            let positions = TTTBoardPositionSequence().map { $0 }
-            let statePositions = zip(config.states,positions)
-            for (state,position) in statePositions {
-                self[position]?.state = state
+            for (index,state) in config.states.enumerated() {
+                self.cells[index].state = state
             }
         }
-    }
-    
-    
-    public subscript(position : TTTBoardPosition) -> TTTCell? {
-        guard position.isValid else {
-            return nil
-        }
-        return cells?[position.toIndex()]
     }
     
     override public func awakeFromNib() {
@@ -51,7 +46,6 @@ public class TTTBoard : UIView {
             self.delegate?.evaluateBoardChange(self, player: .human, config: config, position: cell.position)
         }
     }
-    
     
     func highlight(_ positions : [TTTBoardPosition]) {
         let cells = self.cells.filter { positions.contains($0.position) }
@@ -89,7 +83,7 @@ private extension TTTBoard {
     
     func setupTouchHandler() {
         for cell in cells {
-            let recognizer = UITapGestureRecognizer(target: self, action: #selector(cellTouchHandler(_:)))
+            let recognizer = UITapGestureRecognizer(target: self, action:Selector.cellTouchHandler)
             cell.addGestureRecognizer(recognizer)
         }
     }
