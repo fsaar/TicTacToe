@@ -28,7 +28,7 @@ public class TTTBoard : UIView {
     @IBOutlet var cells : [TTTCell]!
     var config = TTTBoardConfig.empty() {
         didSet {
-            for (index,state) in config.states.enumerated() {
+            config.states.enumerated().forEach { index,state in
                 self.cells[index].state = state
             }
         }
