@@ -11,9 +11,6 @@ import Foundation
 class TTTBackendClient {
     let path = "https://fathomless-wildwood-36205.herokuapp.com/config"
     let session = URLSession(configuration: .default)
-    init() {
-        
-    }
     
     func config(forStates states: String, usingCompletionBlock completionBlock : ((String?)->())?) {
         var components = URLComponents(string: path)
