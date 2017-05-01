@@ -50,19 +50,20 @@ public struct TTTBoardPosition : Equatable {
 
 
 public class TTTBoardPositionGenerator: IteratorProtocol {
+    let max : (columns:Int,rows:Int) = (3,3)
     var currentPos: TTTBoardPosition
     init() {
         currentPos = TTTBoardPosition(column: -1 , row:0)
     }
     public func next() -> TTTBoardPosition? {
         currentPos = TTTBoardPosition(column: currentPos.column + 1 , row: currentPos.row)
-        if currentPos.column < 3  {
+        if currentPos.column < max.columns {
             return currentPos
         }
         currentPos = TTTBoardPosition(column: 0 , row: currentPos.row + 1)
         currentPos.column = 0
         
-        if (currentPos.row < 3) {
+        if (currentPos.row < max.rows) {
             return currentPos
         }
         return nil
