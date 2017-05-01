@@ -39,14 +39,6 @@ public class TTTWatchBoard : NSObject {
         clear()
     }
     
-    func highlight(_ positions : [TTTBoardPosition]) {
-        self.cells.filter { positions.contains($0.position) }.forEach { $0.highlight() }
-    }
-
-    func unHighlight(_ positions : [TTTBoardPosition]) {
-        self.cells.filter { positions.contains($0.position) }.forEach { $0.unHighlight() }
-            
-    }
 
     func clear() {
         self.config = TTTBoardConfig.empty()

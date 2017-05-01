@@ -11,9 +11,6 @@ import WatchKit
 class TTTExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        let imageGreen = UIImage(named: "Green")
-        let imageRed = UIImage(named: "Red")
-        print("\(imageGreen) \(imageRed)")
         // Perform any final initialization of your application.
     }
 

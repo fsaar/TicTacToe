@@ -21,7 +21,6 @@ public class TTTWatchCell : NSObject {
     
     var state = TTTState.undefined {
         didSet {
-            self.unHighlight()
             if let image = state.stateImage() {
                 self.button?.setBackgroundImage(image)
             }
@@ -38,13 +37,6 @@ public class TTTWatchCell : NSObject {
         self.button = button
     }
     
-    func highlight() {
-        self.button?.setBackgroundColor(.white)
-    }
-
-    func unHighlight() {
-        self.button?.setBackgroundColor(.gray)
-    }
     
     func clear() {
         self.state = TTTState.undefined

@@ -71,10 +71,14 @@ class TTTInterfaceController: WKInterfaceController {
     }
     
     func buttonTapped(button : WKInterfaceButton) {
-        guard let index = self.cells?.index(of: button),let board = board,let position  = board[index]?.position else {
+        guard self.state == .started, let index = self.cells?.index(of: button),let board = board,let cell = board[index], cell.state == .undefined else {
+            if self.state == .ended {
+                gameOver()
+            }
             return
         }
-        play(board, player: .human, config: board.config, position: position)
+        
+        play(board, player: .human, config: board.config, position: cell.position)
         if self.state != .ended
         {
             playMachine()
@@ -126,8 +130,7 @@ fileprivate extension TTTInterfaceController {
         let newConfig = TTTBoardConfig(board: config.states, newState: newState, atPosition: position)
         board.config = newConfig
         if let winningRow = board.config.isComplete() {
-            board.highlight(winningRow)
-            gameOver()
+            self.state = .ended
         }
     }
     
