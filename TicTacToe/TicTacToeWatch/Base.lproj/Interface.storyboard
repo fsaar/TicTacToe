@@ -81,6 +81,15 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="Umq-VK-zja">
+                        <items>
+                            <menuItem title="Start Again" icon="trash" id="dtz-RR-P2e">
+                                <connections>
+                                    <action selector="restart" destination="AgC-eL-Hgc" id="Pmu-kh-Ppe"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="cell0" destination="VYu-c8-6vo" id="qR9-4O-GVG"/>
                         <outlet property="cell1" destination="Art-Pm-DF3" id="W5N-TN-HiQ"/>
@@ -99,7 +108,7 @@
         <!--TTTGameOverController-->
         <scene sceneID="dP1-if-Szy">
             <objects>
-                <controller identifier="TTTGameOverController" id="SAo-LQ-NSh" customClass="TTTGameOverController" customModule="TicTacToeWatch_Extension">
+                <controller identifier="TTTGameOverController" hidesWhenLoading="NO" id="SAo-LQ-NSh" customClass="TTTGameOverController" customModule="TicTacToeWatch_Extension">
                     <items>
                         <label alignment="center" verticalAlignment="center" text="Game Over" id="s5i-X6-9wd">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

@@ -131,7 +131,9 @@ fileprivate extension TTTInterfaceController {
         }
     }
     
-    
+    @IBAction func restart() {
+        self.state = .started
+    }
     
     func gameOver() {
         self.presentController(withName: "TTTGameOverController", context: self)
