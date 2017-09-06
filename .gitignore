@@ -24,7 +24,7 @@ DerivedData
 # CircleCI Installed Dependancies
 #
 .bundle/
-
+.env
 # Fastlane
 #
 report.xml

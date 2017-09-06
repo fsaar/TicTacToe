@@ -41,7 +41,7 @@ public class TTTBoard : UIView {
         setupCellPositions()
         setupTouchHandler() 
     }
-    func cellTouchHandler(_ recognizer : UITapGestureRecognizer) {
+    @objc func cellTouchHandler(_ recognizer : UITapGestureRecognizer) {
         if let cell = recognizer.view as? TTTCell , cell.state == .undefined {
             self.delegate?.evaluateBoardChange(self, player: .human, config: config, position: cell.position)
         }

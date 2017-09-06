@@ -129,7 +129,7 @@ fileprivate extension TTTInterfaceController {
         let newState = player == .human ? newHumanState : newMachineState
         let newConfig = TTTBoardConfig(board: config.states, newState: newState, atPosition: position)
         board.config = newConfig
-        if let winningRow = board.config.isComplete() {
+        if let _ = board.config.isComplete() {
             self.state = .ended
         }
     }
