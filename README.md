@@ -2,5 +2,7 @@
 
 # TicTacToe 
 
-An implementation of TicTacToe 
+An implementation of TicTacToe
+
+[![TicTacToe](https://static1.squarespace.com/static/56e48990f699bb97173ad03c/t/57d5a9cc5016e199d1de87cf/1473620434484/?format=1500w)](https://www.allaboutswift.com/dev/2016/9/11/an-exercise-in-swift)
 
