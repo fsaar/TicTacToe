@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/fsaar/TicTacToe.svg?branch=master)](https://travis-ci.org/fsaar/TicTacToe)
-
+[![Travis Build Status](https://travis-ci.org/fsaar/TicTacToe.svg?branch=master)](https://travis-ci.org/fsaar/TicTacToe)
+[![Bitrise Build Status](https://www.bitrise.io/app/c950f49b3ee5795f/status.svg?token=5MpiXv8NPFeKGcieFpXdHA&branch=master)](https://www.bitrise.io/app/c950f49b3ee5795f)
 # TicTacToe 
 
 An implementation of TicTacToe
