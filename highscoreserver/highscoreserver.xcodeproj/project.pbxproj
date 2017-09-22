@@ -1595,7 +1595,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_276 /* Build configuration list for PBXNativeTarget "highscoreserver" */;
 			buildPhases = (
-				56AA27EC1F752126004CC6D4 /* ShellScript */,
 				OBJ_279 /* Sources */,
 				OBJ_283 /* Frameworks */,
 			);
@@ -1700,19 +1699,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "swift build";
-		};
-		56AA27EC1F752126004CC6D4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd ../highscoreserver\nswift build\n\necho test\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

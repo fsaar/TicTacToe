@@ -655,7 +655,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ../highscoreserver\npwd\nswift package fetch";
+			shellScript = "cd ../highscoreserver\nswift package fetch";
 		};
 /* End PBXShellScriptBuildPhase section */
 

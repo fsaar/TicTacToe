@@ -35,11 +35,10 @@ class HighScoreRouter {
             try response.status(.badRequest).end()
             return
         }
-        let score = json["highscore"]
-        if let item = HighscoreItem(with: score) {
+        if let item = HighscoreItem(with: json) {
             highScore.addScore(item)
         }
-        response.status(.OK)
+        _ = response.send(status: .OK)
         next()
     }
     

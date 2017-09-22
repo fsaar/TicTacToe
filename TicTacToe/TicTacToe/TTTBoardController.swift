@@ -22,9 +22,9 @@ class TTTBoardController: UIViewController {
     let client = TTTBackendClient()
     
     override func viewDidLoad() {
-        client.getHighScore()
-        
         super.viewDidLoad()
+        client.getHighScore()
+        client.postHigscore(with: "Red", moves: 20, time: 2.0)
         self.state = .started
         self.board.delegate = self
 

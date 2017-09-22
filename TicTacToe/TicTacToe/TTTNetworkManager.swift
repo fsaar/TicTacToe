@@ -14,8 +14,7 @@ enum TTTNetworkManagerErrorType : Error {
 
 class TTTNetworkManager {
     public static let shared =  TTTNetworkManager()
-    
-    fileprivate lazy var session = URLSession(configuration: URLSessionConfiguration.default)
+    fileprivate lazy var session = URLSession(configuration: URLSessionConfiguration.ephemeral)
     fileprivate let baseURL = URL(string:"http://127.0.0.1:8090")
 
     public func getDataWithRelativePath(_ path: String , completionBlock:@escaping ((_ data : Data?,_ error:Error?) -> Void)) {
@@ -28,4 +27,24 @@ class TTTNetworkManager {
         })
         task.resume()
     }
+    
+    public func postData(data : Data,withRelativePath path: String , completionBlock: ((_ error:Error?) -> Void)? = nil) {
+        guard let url = URL(string:path,relativeTo:baseURL) else {
+            completionBlock?(TTTNetworkManagerErrorType.InvalidURL(path))
+            return
+        }
+        
+        var mutableRequest = URLRequest(url: url)
+        mutableRequest.httpMethod = "POST"
+        mutableRequest.setValue("\(data.count)", forHTTPHeaderField: "Content-Length")
+        mutableRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+     
+        let task = self.session.uploadTask(with: mutableRequest, from: data) { _, _, error in
+            completionBlock?(error)
+        }
+        task.resume()
+        
+    }
 }
+
+
