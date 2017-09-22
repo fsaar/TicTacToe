@@ -19,7 +19,11 @@ class TTTBoardController: UIViewController {
             }
         }
     }
+    let client = TTTBackendClient()
+    
     override func viewDidLoad() {
+        client.getHighScore()
+        
         super.viewDidLoad()
         self.state = .started
         self.board.delegate = self

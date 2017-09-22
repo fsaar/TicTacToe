@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */; };
+		569744D11F72DCB10001E7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE51D7219EB0007E476 /* Assets.xcassets */; };
+		56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */; };
+		56AA27761F740B40004CC6D4 /* TTTNotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */; };
+		56AA27791F741161004CC6D4 /* TicTacToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */; };
+		56AA27811F74135D004CC6D4 /* TTTCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */; };
+		56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA27841F7415A3004CC6D4 /* CoreData.framework */; };
+		56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */; };
+		56AA27911F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */; };
 		56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */; };
 		56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */; };
 		56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE21D7219EB0007E476 /* Main.storyboard */; };
@@ -29,6 +38,111 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5673A8701F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "highscoreserver::highscoreserver::Product";
+			remoteInfo = highscoreserver;
+		};
+		5673A8721F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "KituraStencil::KituraStencil::Product";
+			remoteInfo = KituraStencil;
+		};
+		5673A8741F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Stencil::Stencil::Product";
+			remoteInfo = Stencil;
+		};
+		5673A8761F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "PathKit::PathKit::Product";
+			remoteInfo = PathKit;
+		};
+		5673A8781F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Spectre::Spectre::Product";
+			remoteInfo = Spectre;
+		};
+		5673A87A1F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "HeliumLogger::HeliumLogger::Product";
+			remoteInfo = HeliumLogger;
+		};
+		5673A87C1F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Kitura::Kitura::Product";
+			remoteInfo = Kitura;
+		};
+		5673A87E1F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine::Product";
+			remoteInfo = KituraTemplateEngine;
+		};
+		5673A8801F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON::Product";
+			remoteInfo = SwiftyJSON;
+		};
+		5673A8821F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Kitura-net::KituraNet::Product";
+			remoteInfo = KituraNet;
+		};
+		5673A8841F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SSLService::SSLService::Product";
+			remoteInfo = SSLService;
+		};
+		5673A8861F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Socket::Socket::Product";
+			remoteInfo = Socket;
+		};
+		5673A8881F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "LoggerAPI::LoggerAPI::Product";
+			remoteInfo = LoggerAPI;
+		};
+		5673A88A1F72DE1600E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Kitura-net::CHTTPParser::Product";
+			remoteInfo = CHTTPParser;
+		};
+		5673A8AD1F72DEB000E8B73C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "highscoreserver::highscoreserver";
+			remoteInfo = highscoreserver;
+		};
 		56FABCE01EB74EC900FC871A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
@@ -71,11 +185,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = highscoreserver.xcodeproj; path = ../highscoreserver/highscoreserver.xcodeproj; sourceTree = "<group>"; };
+		5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBackendClient.swift; sourceTree = "<group>"; };
+		5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNetworkManager.swift; sourceTree = "<group>"; };
+		56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNotificationObserver.swift; sourceTree = "<group>"; };
+		56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe.xcdatamodel; sourceTree = "<group>"; };
+		56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTCoreDataStack.swift; sourceTree = "<group>"; };
+		56AA27841F7415A3004CC6D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		56F6DADB1D7219EB0007E476 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTAppDelegate.swift; sourceTree = "<group>"; };
 		56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardController.swift; sourceTree = "<group>"; };
 		56F6DAE31D7219EB0007E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		56F6DAE51D7219EB0007E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56F6DAE51D7219EB0007E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TicTacToe/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		56F6DAEA1D7219EB0007E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F6DAF01D721AA50007E476 /* TTTBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTBoard.swift; sourceTree = "<group>"; };
 		56F6DAF21D721B5B0007E476 /* TTTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTCell.swift; sourceTree = "<group>"; };
@@ -101,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,13 +238,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5673A8521F72DE1500E8B73C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5673A8711F72DE1600E8B73C /* highscoreserver */,
+				5673A8731F72DE1600E8B73C /* KituraStencil.framework */,
+				5673A8751F72DE1600E8B73C /* Stencil.framework */,
+				5673A8771F72DE1600E8B73C /* PathKit.framework */,
+				5673A8791F72DE1600E8B73C /* Spectre.framework */,
+				5673A87B1F72DE1600E8B73C /* HeliumLogger.framework */,
+				5673A87D1F72DE1600E8B73C /* Kitura.framework */,
+				5673A87F1F72DE1600E8B73C /* KituraTemplateEngine.framework */,
+				5673A8811F72DE1600E8B73C /* SwiftyJSON.framework */,
+				5673A8831F72DE1600E8B73C /* KituraNet.framework */,
+				5673A8851F72DE1600E8B73C /* SSLService.framework */,
+				5673A8871F72DE1600E8B73C /* Socket.framework */,
+				5673A8891F72DE1600E8B73C /* LoggerAPI.framework */,
+				5673A88B1F72DE1600E8B73C /* CHTTPParser.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */ = {
+			isa = PBXGroup;
+			children = (
+				56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */,
+			);
+			path = TTTNotificationObserver;
+			sourceTree = "<group>";
+		};
+		56AA277A1F7412A2004CC6D4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */,
+				56AA277B1F7412A2004CC6D4 /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		56AA277B1F7412A2004CC6D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */,
+				56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56AA27831F7415A3004CC6D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56AA27841F7415A3004CC6D4 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56F6DAD21D7219EB0007E476 = {
 			isa = PBXGroup;
 			children = (
+				5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */,
 				56F6DADD1D7219EB0007E476 /* TicTacToe */,
 				56FABCD31EB74EC900FC871A /* TicTacToeWatch */,
 				56FABCE21EB74EC900FC871A /* TicTacToeWatch Extension */,
 				56F6DADC1D7219EB0007E476 /* Products */,
+				56AA27831F7415A3004CC6D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +318,11 @@
 		56F6DADD1D7219EB0007E476 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				56AA277A1F7412A2004CC6D4 /* CoreData */,
+				56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */,
+				56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */,
+				5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */,
+				5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */,
 				56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */,
 				56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */,
 				56F6DAF01D721AA50007E476 /* TTTBoard.swift */,
@@ -207,6 +393,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5673A8AE1F72DEB000E8B73C /* PBXTargetDependency */,
 				56FABCEF1EB74EC900FC871A /* PBXTargetDependency */,
 			);
 			name = TicTacToe;
@@ -283,6 +470,12 @@
 			mainGroup = 56F6DAD21D7219EB0007E476;
 			productRefGroup = 56F6DADC1D7219EB0007E476 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5673A8521F72DE1500E8B73C /* Products */;
+					ProjectRef = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				56F6DADA1D7219EB0007E476 /* TicTacToe */,
@@ -292,12 +485,114 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5673A8711F72DE1600E8B73C /* highscoreserver */ = {
+			isa = PBXReferenceProxy;
+			fileType = text;
+			path = highscoreserver;
+			remoteRef = 5673A8701F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8731F72DE1600E8B73C /* KituraStencil.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KituraStencil.framework;
+			remoteRef = 5673A8721F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8751F72DE1600E8B73C /* Stencil.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Stencil.framework;
+			remoteRef = 5673A8741F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8771F72DE1600E8B73C /* PathKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PathKit.framework;
+			remoteRef = 5673A8761F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8791F72DE1600E8B73C /* Spectre.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Spectre.framework;
+			remoteRef = 5673A8781F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A87B1F72DE1600E8B73C /* HeliumLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HeliumLogger.framework;
+			remoteRef = 5673A87A1F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A87D1F72DE1600E8B73C /* Kitura.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kitura.framework;
+			remoteRef = 5673A87C1F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A87F1F72DE1600E8B73C /* KituraTemplateEngine.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KituraTemplateEngine.framework;
+			remoteRef = 5673A87E1F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8811F72DE1600E8B73C /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 5673A8801F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8831F72DE1600E8B73C /* KituraNet.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KituraNet.framework;
+			remoteRef = 5673A8821F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8851F72DE1600E8B73C /* SSLService.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SSLService.framework;
+			remoteRef = 5673A8841F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8871F72DE1600E8B73C /* Socket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Socket.framework;
+			remoteRef = 5673A8861F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A8891F72DE1600E8B73C /* LoggerAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoggerAPI.framework;
+			remoteRef = 5673A8881F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5673A88B1F72DE1600E8B73C /* CHTTPParser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CHTTPParser.framework;
+			remoteRef = 5673A88A1F72DE1600E8B73C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		56F6DAD91D7219EB0007E476 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				56F6DB031D735DD00007E476 /* Localizable.strings in Resources */,
+				569744D11F72DCB10001E7BA /* Assets.xcassets in Resources */,
 				56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,9 +623,16 @@
 			files = (
 				56F6DAF31D721B5B0007E476 /* TTTCell.swift in Sources */,
 				56F6DAF51D7309D90007E476 /* TTTBoardConfig.swift in Sources */,
+				56AA27761F740B40004CC6D4 /* TTTNotificationObserver.swift in Sources */,
 				56F6DAF11D721AA50007E476 /* TTTBoard.swift in Sources */,
 				56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */,
+				56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */,
+				56AA27811F74135D004CC6D4 /* TTTCoreDataStack.swift in Sources */,
+				5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */,
+				56AA27791F741161004CC6D4 /* TicTacToe.xcdatamodeld in Sources */,
 				56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */,
+				56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */,
+				56AA27911F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +653,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5673A8AE1F72DEB000E8B73C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = highscoreserver;
+			targetProxy = 5673A8AD1F72DEB000E8B73C /* PBXContainerItemProxy */;
+		};
 		56FABCE11EB74EC900FC871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 56FABCDD1EB74EC900FC871A /* TicTacToeWatch Extension */;
@@ -496,6 +803,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +817,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +956,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */,
+			);
+			currentVersion = 56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */;
+			path = TicTacToe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56F6DAD31D7219EB0007E476 /* Project object */;
 }
