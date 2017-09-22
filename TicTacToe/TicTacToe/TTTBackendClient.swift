@@ -11,19 +11,25 @@ import Foundation
 enum TTTBackendClientAPI : String {
     case highscore = "highscore.json"
 }
+enum TTTBackendClientError : Error {
+    case decoderError
+}
 
 class TTTBackendClient {
     let manager = TTTNetworkManager.shared
     
-    func getHighScore(callBack onQueue: OperationQueue = OperationQueue.main, using completionBlock: (() -> ())? = nil) {
+    func getHighScore(callBack onQueue: OperationQueue = OperationQueue.main, using completionBlock: ((_ highscore: [TTTHighscore],_ error : Error?) -> ())? = nil) {
         manager.getDataWithRelativePath(TTTBackendClientAPI.highscore.rawValue) { data, error in
             
             if let data = data,
                 let highscore = try? JSONDecoder().decode([TTTHighscore].self, from: data) {
-                print(highscore)
+                onQueue.addOperation({
+                    completionBlock?(highscore,nil)
+                })
             }
             onQueue.addOperation({
-                completionBlock?()
+                let err = error ?? TTTBackendClientError.decoderError
+                completionBlock?([],err)
             })
         }
     }
