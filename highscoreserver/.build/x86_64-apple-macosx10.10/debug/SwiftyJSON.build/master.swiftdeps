@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "43ea1761b0f1f37b9fc562d591738ad8"
+build_time: [1506057912, 138789000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON/LclJSONSerialization.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON/SwiftyJSON.swift": [1506057910, 0]

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/master.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/HighScore.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScore.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScore.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScore~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScore.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/HighScoreRouter.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScoreRouter.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScoreRouter.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScoreRouter~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/HighScoreRouter.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/main.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/main.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/main.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/highscoreserver.build/main.swiftdeps"
+  }
+}

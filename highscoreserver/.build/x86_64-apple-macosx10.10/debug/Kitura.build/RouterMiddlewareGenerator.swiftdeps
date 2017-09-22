@@ -1,0 +1,55 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RouterMiddlewareGenerator"
+provides-nominal:
+- "6Kitura25RouterMiddlewareGeneratorC"
+provides-member:
+- ["6Kitura25RouterMiddlewareGeneratorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "RouterHandler"
+- "RouterMiddleware"
+- "RouterMiddlewareGenerator"
+- "RouterRequest"
+- "RouterResponse"
+- "Void"
+depends-member:
+- ["6Kitura16RouterMiddlewareP", "handle"]
+- !private ["6Kitura16RouterMiddlewareP", "innerHandler"]
+- ["6Kitura16RouterMiddlewareP", ""]
+- ["6Kitura25RouterMiddlewareGeneratorC", "RouterHandler"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "RouterRequest"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "RouterResponse"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "Void"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "deinit"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "handle"]
+- ["6Kitura25RouterMiddlewareGeneratorC", "init"]
+- !private ["6Kitura25RouterMiddlewareGeneratorC", "innerHandler"]
+depends-nominal:
+- "6Kitura16RouterMiddlewareP"
+- "6Kitura25RouterMiddlewareGeneratorC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/LoggerAPI.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/SwiftyJSON.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/SSLService.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/KituraTemplateEngine.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/KituraNet.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Socket.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode9-GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include/CHTTPParser.h"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include/utils.h"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/CCurl.git-8026296523752779197/module.modulemap"
+- "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/CHTTPParser.build/module.modulemap"
+interface-hash: "f342a21fee530afb02255350f315f1c5"

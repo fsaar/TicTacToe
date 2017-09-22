@@ -1,0 +1,119 @@
+{
+  "": {
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/master.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Context.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Context.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Context.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Context~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Context.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Environment.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Environment.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Environment.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Environment~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Environment.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Errors.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Errors.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Errors.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Errors~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Errors.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Expression.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Expression.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Expression.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Expression~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Expression.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Extension.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Extension.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Extension.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Extension~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Extension.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/FilterTag.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/FilterTag.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/FilterTag.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/FilterTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/FilterTag.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Filters.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Filters.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Filters.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Filters~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Filters.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/ForTag.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/ForTag.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/ForTag.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/ForTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/ForTag.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/IfTag.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/IfTag.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/IfTag.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/IfTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/IfTag.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Include.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Include.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Include.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Include~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Include.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Inheritence.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Inheritence.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Inheritence.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Inheritence~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Inheritence.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Lexer.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Lexer.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Lexer.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Lexer~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Lexer.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Loader.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Loader.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Loader.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Loader~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Loader.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Node.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Node.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Node.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Node~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Node.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/NowTag.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/NowTag.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/NowTag.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/NowTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/NowTag.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Parser.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Parser.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Parser.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Parser~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Parser.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Template.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Template.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Template.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Template~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Template.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Tokenizer.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Tokenizer.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Tokenizer.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Tokenizer~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Tokenizer.swiftdeps"
+  },
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Stencil--9185492005012625299/Sources/Variable.swift": {
+    "dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Variable.d",
+    "object": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Variable.swift.o",
+    "swiftmodule": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Variable~partial.swiftmodule",
+    "swift-dependencies": "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/x86_64-apple-macosx10.10/debug/Stencil.build/Variable.swiftdeps"
+  }
+}

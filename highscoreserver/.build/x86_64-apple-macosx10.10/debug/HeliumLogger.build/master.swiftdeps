@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "4d6d3c3b5cc0c1191067774ab9a4ef9d"
+build_time: [1506057912, 542545000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/HeliumLogger.git-2106793442615829935/Sources/HeliumLogger/HeliumLogger.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/HeliumLogger.git-2106793442615829935/Sources/HeliumLogger/HeliumStreamLogger.swift": [1506057910, 0]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "2082ed470508cc1139ed388cfd8132aa"
+build_time: [1506057921, 136064000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/BlueSSLService.git--6577639804771281610/Sources/SSLService/SSLService.swift": [1506057909, 0]

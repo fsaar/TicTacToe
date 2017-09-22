@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "7d3ae796a4de63c267279c550acd1ef7"
+build_time: [1506057931, 356747000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/HighScore.swift": [1505746179, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/HighScoreRouter.swift": [1506014134, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/Sources/highscoreserver/main.swift": [1505748963, 0]

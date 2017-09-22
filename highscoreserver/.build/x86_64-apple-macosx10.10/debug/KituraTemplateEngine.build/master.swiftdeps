@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "a5df6c3d1632009e5225d068c03c08a0"
+build_time: [1506057912, 98490000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Kitura-TemplateEngine.git--5059963620657797085/Sources/KituraTemplateEngine/TemplateEngine.swift": [1506057908, 0]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "cf34b44d7f642ef9e6f33741f47e4de8"
+build_time: [1506057912, 108927000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/LoggerAPI.git--6449715459278086880/Sources/LoggerAPI/Logger.swift": [1506057909, 0]

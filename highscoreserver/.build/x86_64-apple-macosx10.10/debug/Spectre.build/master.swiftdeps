@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "37509e79eddd0ac9c8cd2612f96fdf81"
+build_time: [1506057912, 102609000]
+inputs:
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Case.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Context.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Expectation.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Failure.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Global.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/GlobalContext.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Reporter.swift": [1506057910, 0]
+  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Spectre.git--7655155069707042687/Sources/Reporters.swift": [1506057910, 0]
