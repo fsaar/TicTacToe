@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "53025671a625acfb2f24ee2e0f397539"
-build_time: [1506057916, 702735000]
-inputs:
-  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/PathKit.git--1865447967743163058/Sources/PathKit.swift": [1506057909, 0]

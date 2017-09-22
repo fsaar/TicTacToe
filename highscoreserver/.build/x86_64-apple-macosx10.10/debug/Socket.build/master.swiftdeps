@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "a8b8c67672d65b1cc3fecfbff70130ba"
-build_time: [1506057912, 137858000]
-inputs:
-  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/Socket.swift": [1506057909, 0]
-  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/SocketProtocols.swift": [1506057909, 0]
-  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket/SocketUtils.swift": [1506057909, 0]

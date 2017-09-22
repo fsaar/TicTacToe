@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
-options: "69f0cf86e0d3c678f7f02bbeeda994f0"
-build_time: [1506057920, 34744000]
-inputs:
-  "/Users/fsaar/Dropbox/Programs/TicTacToe/highscoreserver/.build/checkouts/Kitura-StencilTemplateEngine.git--2176492381134715142/Sources/KituraStencil/KituraStencilTemplateEngine.swift": [1506057908, 0]

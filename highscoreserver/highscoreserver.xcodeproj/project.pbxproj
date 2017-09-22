@@ -1054,7 +1054,7 @@
 			path = ".build/checkouts/Spectre.git--7655155069707042687/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1064,7 +1064,6 @@
 				OBJ_14 /* Dependencies */,
 				OBJ_182 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* HeliumLogger 1.7.1 */ = {
@@ -1490,6 +1489,7 @@
 			buildPhases = (
 				OBJ_376 /* Sources */,
 				OBJ_385 /* Frameworks */,
+				56AA27C91F75131B004CC6D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1504,6 +1504,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_222 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */;
 			buildPhases = (
+				56AA27C81F74E4DD004CC6D4 /* Swift build */,
 				OBJ_225 /* Sources */,
 			);
 			buildRules = (
@@ -1594,9 +1595,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_276 /* Build configuration list for PBXNativeTarget "highscoreserver" */;
 			buildPhases = (
+				56AA27EC1F752126004CC6D4 /* ShellScript */,
 				OBJ_279 /* Sources */,
 				OBJ_283 /* Frameworks */,
-				5673A8B01F73FB3400E8B73C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1635,7 +1636,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_182 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1673,7 +1674,21 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5673A8B01F73FB3400E8B73C /* ShellScript */ = {
+		56AA27C81F74E4DD004CC6D4 /* Swift build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swift build";
+		};
+		56AA27C91F75131B004CC6D4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1684,7 +1699,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "swift build";
+		};
+		56AA27EC1F752126004CC6D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../highscoreserver\nswift build\n\necho test\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
