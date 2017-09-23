@@ -160,13 +160,6 @@
 			remoteGlobalIDString = 56FABCD11EB74EC800FC871A;
 			remoteInfo = TicTacToeWatch;
 		};
-		56AA27E31F751FCC004CC6D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = "highscoreserver::highscoreserver";
-			remoteInfo = highscoreserver;
-		};
 		56AA27F21F75228E004CC6D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
@@ -432,7 +425,6 @@
 			);
 			dependencies = (
 				56AA27F31F75228E004CC6D4 /* PBXTargetDependency */,
-				56AA27E41F751FCC004CC6D4 /* PBXTargetDependency */,
 				56AA27E21F751FC1004CC6D4 /* PBXTargetDependency */,
 			);
 			name = TicTacToe;
@@ -720,11 +712,6 @@
 			isa = PBXTargetDependency;
 			target = 56FABCD11EB74EC800FC871A /* TicTacToeWatch */;
 			targetProxy = 56AA27E11F751FC1004CC6D4 /* PBXContainerItemProxy */;
-		};
-		56AA27E41F751FCC004CC6D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = highscoreserver;
-			targetProxy = 56AA27E31F751FCC004CC6D4 /* PBXContainerItemProxy */;
 		};
 		56AA27F31F75228E004CC6D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
