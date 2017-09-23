@@ -26,9 +26,20 @@ class TTTHighscoreTableViewController: UITableViewController {
         return resultsController
     }()
     
+    lazy var titleLabel : UILabel = {
+        let label = UILabel(frame: .zero)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.text = "Highscore"
+        return label
+    }()
+    
+ 
     let client = TTTBackendClient()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = self.titleLabel
+        self.navigationController?.navigationBar.barTintColor = .black
         client.getHighScore() { highscore,_ in
             self.tableView.reloadData()
         }

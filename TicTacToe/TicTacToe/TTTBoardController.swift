@@ -4,6 +4,8 @@ import UIKit
 
 
 class TTTBoardController: UIViewController {
+ 
+    
     @IBOutlet weak var board : TTTBoard!
     @IBOutlet weak var showHighScoreButton : UIButton! = nil {
         didSet {
@@ -11,24 +13,38 @@ class TTTBoardController: UIViewController {
         }
     }
     var humanIsRed = true
+    var playerWon = false
+    var startTime : Date?
+    var moves : Int = 1
     @IBOutlet private var startButton : UIButton!
     @IBOutlet private var machineStartsButton : UIButton!
     var state : TTTBoardControllerState = .started  {
         didSet {
             switch state {
             case .started:
+                self.startTime = Date()
+                self.playerWon = false
+                self.moves = 1
                 self.board.clear()
                 self.board.isUserInteractionEnabled = true
             case .ended:
+                if playerWon,let startTime = startTime {
+                    let time = Date().timeIntervalSinceReferenceDate - startTime.timeIntervalSinceReferenceDate
+                    let name = humanIsRed ? "RED" : "GREEN"
+                    self.client.postHigscore(with: name, moves: self.moves, time: Float(time))
+                }
                 self.board.isUserInteractionEnabled = false
             }
         }
     }
     let client = TTTBackendClient()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.client.postHigscore(with: "Test", moves: 1, time: 1.0)
         checkHighscoreReachability()
         self.state = .started
         self.board.delegate = self
@@ -55,6 +71,7 @@ extension TTTBoardController : TTTBoardDelegate {
     
     func evaluateBoardChange(_ board : TTTBoard,player : TTTBoardPlayer,config: TTTBoardConfig,position : TTTBoardPosition)
     {
+        moves += 1
         play(board, player: player, config: config, position: position)
         if self.state != .ended
         {
@@ -86,6 +103,7 @@ private extension TTTBoardController {
         board.config = newConfig
         if let winningRow = board.config.isComplete() {
             board.highlight(winningRow)
+            self.playerWon = player == .human
             self.state = .ended
         }
     }

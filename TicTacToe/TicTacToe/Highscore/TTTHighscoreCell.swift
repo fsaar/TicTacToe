@@ -16,7 +16,13 @@ class TTTHighscoreCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-       prepareForReuse()
+        self.contentView.backgroundColor = .gray
+        self.position.textColor = .white
+        self.time.textColor = .white
+        self.moves.textColor = .white
+        self.name.textColor = .white
+
+        prepareForReuse()
     }
     
     override func prepareForReuse() {

@@ -38,7 +38,7 @@ class TTTBackendClient {
     }
     
     func postHigscore(with name : String,moves : Int, time : Float,callBack onQueue: OperationQueue = OperationQueue.main,using completionBlock: ((_ error : Error?) -> ())? = nil) {
-        let dict : [String : Any] = [ "name" : name, "moves" : moves, "time" : 0.0]
+        let dict : [String : Any] = [ "name" : name, "moves" : moves, "time" : time]
         if let data = try? JSONSerialization.data(withJSONObject: dict, options: []) {
             manager.postData(data: data, withRelativePath: TTTBackendClientAPI.highscore.rawValue) { error in
                 onQueue.addOperation({
