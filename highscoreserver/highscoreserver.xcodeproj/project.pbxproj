@@ -1489,7 +1489,6 @@
 			buildPhases = (
 				OBJ_376 /* Sources */,
 				OBJ_385 /* Frameworks */,
-				56AA27C91F75131B004CC6D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1504,7 +1503,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_222 /* Build configuration list for PBXNativeTarget "SpectrePackageDescription" */;
 			buildPhases = (
-				56AA27C81F74E4DD004CC6D4 /* Swift build */,
 				OBJ_225 /* Sources */,
 			);
 			buildRules = (
@@ -1682,36 +1680,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		56AA27C81F74E4DD004CC6D4 /* Swift build */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift build";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "swift build";
-		};
-		56AA27C91F75131B004CC6D4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "swift build";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_201 /* Sources */ = {
