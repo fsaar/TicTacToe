@@ -193,231 +193,231 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5673A88C1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DF51F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "KituraStencil::KituraStencil";
 			remoteInfo = KituraStencil;
 		};
-		5673A88D1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DF61F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Stencil::Stencil";
 			remoteInfo = Stencil;
 		};
-		5673A88E1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DF71F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PathKit::PathKit";
 			remoteInfo = PathKit;
 		};
-		5673A88F1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DF81F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		5673A8901F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DF91F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		5673A8911F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFA1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PathKit::PathKit";
 			remoteInfo = PathKit;
 		};
-		5673A8921F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFB1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		5673A8931F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFC1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
 			remoteInfo = KituraTemplateEngine;
 		};
-		5673A8941F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFD1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Stencil::Stencil";
 			remoteInfo = Stencil;
 		};
-		5673A8951F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFE1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PathKit::PathKit";
 			remoteInfo = PathKit;
 		};
-		5673A8961F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347DFF1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Spectre::Spectre";
 			remoteInfo = Spectre;
 		};
-		5673A8971F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E001F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HeliumLogger::HeliumLogger";
 			remoteInfo = HeliumLogger;
 		};
-		5673A8981F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E011F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
 			remoteInfo = LoggerAPI;
 		};
-		5673A8991F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E021F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura::Kitura";
 			remoteInfo = Kitura;
 		};
-		5673A89A1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E031F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
 			remoteInfo = KituraTemplateEngine;
 		};
-		5673A89B1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E041F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
 			remoteInfo = SwiftyJSON;
 		};
-		5673A89C1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E051F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-net::KituraNet";
 			remoteInfo = KituraNet;
 		};
-		5673A89D1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E061F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SSLService::SSLService";
 			remoteInfo = SSLService;
 		};
-		5673A89E1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E071F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Socket::Socket";
 			remoteInfo = Socket;
 		};
-		5673A89F1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E081F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Socket::Socket";
 			remoteInfo = Socket;
 		};
-		5673A8A01F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E091F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
 			remoteInfo = LoggerAPI;
 		};
-		5673A8A11F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0A1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-net::CHTTPParser";
 			remoteInfo = CHTTPParser;
 		};
-		5673A8A21F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0B1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SSLService::SSLService";
 			remoteInfo = SSLService;
 		};
-		5673A8A31F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0C1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Socket::Socket";
 			remoteInfo = Socket;
 		};
-		5673A8A41F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0D1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
 			remoteInfo = LoggerAPI;
 		};
-		5673A8A51F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0E1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-net::CHTTPParser";
 			remoteInfo = CHTTPParser;
 		};
-		5673A8A61F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E0F1F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-TemplateEngine::KituraTemplateEngine";
 			remoteInfo = KituraTemplateEngine;
 		};
-		5673A8A71F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E101F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
 			remoteInfo = SwiftyJSON;
 		};
-		5673A8A81F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E111F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Kitura-net::KituraNet";
 			remoteInfo = KituraNet;
 		};
-		5673A8A91F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E121F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SSLService::SSLService";
 			remoteInfo = SSLService;
 		};
-		5673A8AA1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E131F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Socket::Socket";
 			remoteInfo = Socket;
 		};
-		5673A8AB1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E141F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
 			remoteInfo = LoggerAPI;
 		};
-		5673A8AC1F72DE8E00E8B73C /* PBXContainerItemProxy */ = {
+		56347E151F76C20A0080FBD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -861,8 +861,8 @@
 				OBJ_108 /* Kitura-TemplateEngine 1.7.2 */,
 				OBJ_112 /* SwiftyJSON 17.0.0 */,
 				OBJ_117 /* Kitura-net 1.7.16 */,
-				OBJ_168 /* SSLService 0.12.54 */,
-				OBJ_172 /* Socket 0.12.67 */,
+				OBJ_168 /* SSLService 0.12.55 */,
+				OBJ_172 /* Socket 0.12.68 */,
 				OBJ_178 /* LoggerAPI 1.7.1 */,
 			);
 			name = Dependencies;
@@ -922,13 +922,13 @@
 			path = ".build/checkouts/Kitura-StencilTemplateEngine.git--2176492381134715142/Sources/KituraStencil";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_168 /* SSLService 0.12.54 */ = {
+		OBJ_168 /* SSLService 0.12.55 */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_169 /* SSLService */,
 				OBJ_171 /* Package.swift */,
 			);
-			name = "SSLService 0.12.54";
+			name = "SSLService 0.12.55";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_169 /* SSLService */ = {
@@ -940,13 +940,13 @@
 			path = ".build/checkouts/BlueSSLService.git--6577639804771281610/Sources/SSLService";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_172 /* Socket 0.12.67 */ = {
+		OBJ_172 /* Socket 0.12.68 */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_173 /* Socket */,
 				OBJ_177 /* Package.swift */,
 			);
-			name = "Socket 0.12.67";
+			name = "Socket 0.12.68";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_173 /* Socket */ = {
@@ -1054,7 +1054,7 @@
 			path = ".build/checkouts/Spectre.git--7655155069707042687/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1064,6 +1064,7 @@
 				OBJ_14 /* Dependencies */,
 				OBJ_182 /* Products */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* HeliumLogger 1.7.1 */ = {
@@ -1599,7 +1600,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_321 /* PBXTargetDependency */,
 				OBJ_297 /* PBXTargetDependency */,
 				OBJ_299 /* PBXTargetDependency */,
 				OBJ_301 /* PBXTargetDependency */,
@@ -1612,6 +1612,7 @@
 				OBJ_315 /* PBXTargetDependency */,
 				OBJ_317 /* PBXTargetDependency */,
 				OBJ_319 /* PBXTargetDependency */,
+				OBJ_321 /* PBXTargetDependency */,
 			);
 			name = highscoreserver;
 			productName = highscoreserver;
@@ -1625,17 +1626,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
-				TargetAttributes = {
-					"PathKit::PathKit" = {
-						LastSwiftMigration = 0900;
-					};
-					"Spectre::Spectre" = {
-						LastSwiftMigration = 0900;
-					};
-					"Stencil::Stencil" = {
-						LastSwiftMigration = 0900;
-					};
-				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "highscoreserver" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1644,7 +1634,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
+			mainGroup = OBJ_5 /*  */;
 			productRefGroup = OBJ_182 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -2014,167 +2004,167 @@
 		OBJ_297 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "KituraStencil::KituraStencil" /* KituraStencil */;
-			targetProxy = 5673A88C1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DF51F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_299 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Stencil::Stencil" /* Stencil */;
-			targetProxy = 5673A8941F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFD1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = 5673A8951F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFE1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_303 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 5673A8961F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFF1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HeliumLogger::HeliumLogger" /* HeliumLogger */;
-			targetProxy = 5673A8971F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E001F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_307 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura::Kitura" /* Kitura */;
-			targetProxy = 5673A8991F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E021F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_309 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
-			targetProxy = 5673A8A61F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0F1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_311 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 5673A8A71F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E101F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_313 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 5673A8A81F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E111F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_315 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 5673A8A91F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E121F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_317 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Socket::Socket" /* Socket */;
-			targetProxy = 5673A8AA1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E131F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_319 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 5673A8AB1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E141F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_321 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 5673A8AC1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E151F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Stencil::Stencil" /* Stencil */;
-			targetProxy = 5673A88D1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DF61F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_334 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = 5673A8911F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFA1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_335 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 5673A8921F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFB1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_336 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
-			targetProxy = 5673A8931F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DFC1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_363 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PathKit::PathKit" /* PathKit */;
-			targetProxy = 5673A88E1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DF71F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_364 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 5673A8901F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DF91F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_372 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Spectre::Spectre" /* Spectre */;
-			targetProxy = 5673A88F1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347DF81F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_394 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 5673A8981F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E011F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_451 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-TemplateEngine::KituraTemplateEngine" /* KituraTemplateEngine */;
-			targetProxy = 5673A89A1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E031F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_452 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 5673A89B1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E041F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_453 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 5673A89C1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E051F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_454 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 5673A8A21F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0B1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_455 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Socket::Socket" /* Socket */;
-			targetProxy = 5673A8A31F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0C1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_456 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 5673A8A41F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0D1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 5673A8A51F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0E1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_516 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 5673A89D1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E061F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_517 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Socket::Socket" /* Socket */;
-			targetProxy = 5673A89F1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E081F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_518 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 5673A8A01F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E091F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_519 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 5673A8A11F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E0A1F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 		OBJ_527 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Socket::Socket" /* Socket */;
-			targetProxy = 5673A89E1F72DE8E00E8B73C /* PBXContainerItemProxy */;
+			targetProxy = 56347E071F76C20A0080FBD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2476,7 +2466,7 @@
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -2770,7 +2760,7 @@
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
