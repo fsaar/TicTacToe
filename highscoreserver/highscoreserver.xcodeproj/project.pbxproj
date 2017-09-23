@@ -1599,6 +1599,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_321 /* PBXTargetDependency */,
 				OBJ_297 /* PBXTargetDependency */,
 				OBJ_299 /* PBXTargetDependency */,
 				OBJ_301 /* PBXTargetDependency */,
@@ -1611,7 +1612,6 @@
 				OBJ_315 /* PBXTargetDependency */,
 				OBJ_317 /* PBXTargetDependency */,
 				OBJ_319 /* PBXTargetDependency */,
-				OBJ_321 /* PBXTargetDependency */,
 			);
 			name = highscoreserver;
 			productName = highscoreserver;
