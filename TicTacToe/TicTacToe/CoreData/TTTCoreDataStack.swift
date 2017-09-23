@@ -13,6 +13,13 @@ class TTTCoreDataStack {
     
     lazy public fileprivate(set) var privateQueueManagedObjectContext : NSManagedObjectContext =  {
         let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        context.parent = self.mainQueueManagedObjectContext
+        return context
+        
+    }()
+    
+    lazy public fileprivate(set) var mainQueueManagedObjectContext : NSManagedObjectContext =  {
+        let context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         context.persistentStoreCoordinator = self.storeCoordinator
         return context
         

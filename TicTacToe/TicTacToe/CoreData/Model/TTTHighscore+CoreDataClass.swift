@@ -35,6 +35,10 @@ public class TTTHighscore: NSManagedObject,Codable {
         try container.encode(self.identifier, forKey: .identifier)
     }
     
+    public required override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
+    }
+    
     public required init(from decoder: Decoder) throws {
         let context = TTTCoreDataStack.sharedDataStack.privateQueueManagedObjectContext
         guard let entityDescription = NSEntityDescription.entity(forEntityName: String(describing:TTTHighscore.self), in: context) else {

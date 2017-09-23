@@ -5,6 +5,11 @@ import UIKit
 
 class TTTBoardController: UIViewController {
     @IBOutlet weak var board : TTTBoard!
+    @IBOutlet weak var showHighScoreButton : UIButton! = nil {
+        didSet {
+            showHighScoreButton.isHidden = true
+        }
+    }
     var humanIsRed = true
     @IBOutlet private var startButton : UIButton!
     @IBOutlet private var machineStartsButton : UIButton!
@@ -23,8 +28,7 @@ class TTTBoardController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        client.getHighScore()
-        client.postHigscore(with: "Red", moves: 20, time: 2.0)
+        checkHighscoreReachability()
         self.state = .started
         self.board.delegate = self
 
@@ -40,6 +44,8 @@ class TTTBoardController: UIViewController {
         self.state = .started
         playMachine()
     }
+    
+   
 }
 
 /// MARK: TTTBoardDelegate
@@ -82,4 +88,17 @@ private extension TTTBoardController {
             self.state = .ended
         }
     }
+}
+
+/// Mark: Highscore
+
+private extension TTTBoardController {
+    func checkHighscoreReachability() {
+        client.getHighScore() { _,error in
+            if case .none = error {
+                self.showHighScoreButton.isHidden = false
+            }
+        }
+    }
+
 }

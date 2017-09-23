@@ -23,14 +23,17 @@ class TTTBackendClient {
             
             if let data = data,
                 let highscore = try? JSONDecoder().decode([TTTHighscore].self, from: data) {
+                try? TTTCoreDataStack.sharedDataStack.privateQueueManagedObjectContext.save()
                 onQueue.addOperation({
                     completionBlock?(highscore,nil)
                 })
             }
-            onQueue.addOperation({
-                let err = error ?? TTTBackendClientError.decoderError
-                completionBlock?([],err)
-            })
+            else {
+                onQueue.addOperation({
+                    let err = error ?? TTTBackendClientError.decoderError
+                    completionBlock?([],err)
+                })
+            }
         }
     }
     

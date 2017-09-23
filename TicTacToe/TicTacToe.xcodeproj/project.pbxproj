@@ -30,6 +30,8 @@
 		56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA27841F7415A3004CC6D4 /* CoreData.framework */; };
 		56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */; };
 		56AA27911F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */; };
+		56BD51461F7547D5001A9E42 /* TTTHighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */; };
+		56BD51481F76440C001A9E42 /* TTTHighscoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */; };
 		56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */; };
 		56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */; };
 		56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE21D7219EB0007E476 /* Main.storyboard */; };
@@ -215,6 +217,8 @@
 		56AA27841F7415A3004CC6D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataClass.swift"; sourceTree = "<group>"; };
 		56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreTableViewController.swift; sourceTree = "<group>"; };
+		56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreCell.swift; sourceTree = "<group>"; };
 		56F6DADB1D7219EB0007E476 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTAppDelegate.swift; sourceTree = "<group>"; };
 		56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardController.swift; sourceTree = "<group>"; };
@@ -314,6 +318,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56BD51431F7547A8001A9E42 /* Highscore */ = {
+			isa = PBXGroup;
+			children = (
+				56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */,
+				56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */,
+			);
+			path = Highscore;
+			sourceTree = "<group>";
+		};
 		56F6DAD21D7219EB0007E476 = {
 			isa = PBXGroup;
 			children = (
@@ -339,9 +352,10 @@
 		56F6DADD1D7219EB0007E476 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */,
+				56BD51431F7547A8001A9E42 /* Highscore */,
 				56AA277A1F7412A2004CC6D4 /* CoreData */,
 				56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */,
-				56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */,
 				5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */,
 				5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */,
 				56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */,
@@ -671,7 +685,9 @@
 				56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */,
 				56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */,
 				56AA27811F74135D004CC6D4 /* TTTCoreDataStack.swift in Sources */,
+				56BD51461F7547D5001A9E42 /* TTTHighscoreTableViewController.swift in Sources */,
 				5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */,
+				56BD51481F76440C001A9E42 /* TTTHighscoreCell.swift in Sources */,
 				56AA27791F741161004CC6D4 /* TicTacToe.xcdatamodeld in Sources */,
 				56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */,
 				56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */,

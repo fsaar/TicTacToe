@@ -1627,6 +1627,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"PathKit::PathKit" = {
+						LastSwiftMigration = 0900;
+					};
+					"Spectre::Spectre" = {
+						LastSwiftMigration = 0900;
+					};
+					"Stencil::Stencil" = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "highscoreserver" */;
 			compatibilityVersion = "Xcode 3.2";
