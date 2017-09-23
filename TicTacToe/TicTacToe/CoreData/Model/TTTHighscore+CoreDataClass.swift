@@ -54,6 +54,19 @@ public class TTTHighscore: NSManagedObject,Codable {
             identifier = try? container.decode(String.self, forKey: .identifier)
         }
     }
+    
+    public init(from dict: [String : Any], with context : NSManagedObjectContext) throws {
+        guard let entityDescription = NSEntityDescription.entity(forEntityName: String(describing:TTTHighscore.self), in: context) else {
+            throw TTTHighscore.decoder_no_entity_description
+        }
+        super.init(entity: entityDescription, insertInto: context)
+        
+        name = dict[CodingKeys.name.rawValue] as? String
+        position = dict[CodingKeys.position.rawValue] as? Int16 ?? 0
+        moves = dict[CodingKeys.moves.rawValue] as? Int16 ?? 0
+        time = dict[CodingKeys.time.rawValue] as? Float ?? 0
+        identifier = dict[CodingKeys.identifier.rawValue] as? String
+    }
 }
 
 

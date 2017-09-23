@@ -1,5 +1,5 @@
 //
-//  TTTHighscoreCell.swift
+//  TTTHighscoreViewModel.swift
 //  TicTacToe
 //
 //  Created by Frank Saar on 23/09/2017.
@@ -27,11 +27,11 @@ class TTTHighscoreCell: UITableViewCell {
         self.name.text =  nil
     }
     
-    func configure(with highscore : TTTHighscore) {
-        self.position.text = "\(highscore.position)"
-        self.time.text = "\(highscore.time)"
-        self.moves.text = "\(highscore.moves)"
-        self.name.text = "\(highscore.name ?? "")"
+    func configure(with highscore : TTTHighscoreViewModel) {
+        self.position.text = highscore.position
+        self.time.text = highscore.time
+        self.moves.text = highscore.moves
+        self.name.text = highscore.name
     }
 
    

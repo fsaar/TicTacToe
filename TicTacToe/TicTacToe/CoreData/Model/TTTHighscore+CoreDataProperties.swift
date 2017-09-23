@@ -2,7 +2,7 @@
 //  TTTHighscore+CoreDataProperties.swift
 //  TicTacToe
 //
-//  Created by Frank Saar on 21/09/2017.
+//  Created by Frank Saar on 23/09/2017.
 //  Copyright © 2017 SAMedialabs. All rights reserved.
 //
 //
@@ -12,7 +12,6 @@ import CoreData
 
 
 extension TTTHighscore {
-
 
     @NSManaged public var identifier: String?
     @NSManaged public var moves: Int16

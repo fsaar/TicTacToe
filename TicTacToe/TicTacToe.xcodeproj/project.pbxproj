@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		56347DB31F7658F50080FBD5 /* TTTHighscoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */; };
 		5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */; };
 		569744D11F72DCB10001E7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE51D7219EB0007E476 /* Assets.xcassets */; };
 		56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */; };
@@ -208,6 +209,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreViewModel.swift; sourceTree = "<group>"; };
 		5673A8511F72DE1500E8B73C /* highscoreserver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = highscoreserver.xcodeproj; path = ../highscoreserver/highscoreserver.xcodeproj; sourceTree = "<group>"; };
 		5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBackendClient.swift; sourceTree = "<group>"; };
 		5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNetworkManager.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 		56BD51431F7547A8001A9E42 /* Highscore */ = {
 			isa = PBXGroup;
 			children = (
+				56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */,
 				56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */,
 				56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */,
 			);
@@ -678,6 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56347DB31F7658F50080FBD5 /* TTTHighscoreViewModel.swift in Sources */,
 				56F6DAF31D721B5B0007E476 /* TTTCell.swift in Sources */,
 				56F6DAF51D7309D90007E476 /* TTTBoardConfig.swift in Sources */,
 				56AA27761F740B40004CC6D4 /* TTTNotificationObserver.swift in Sources */,

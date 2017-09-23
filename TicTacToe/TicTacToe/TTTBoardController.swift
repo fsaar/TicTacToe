@@ -28,6 +28,7 @@ class TTTBoardController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.client.postHigscore(with: "Test", moves: 1, time: 1.0)
         checkHighscoreReachability()
         self.state = .started
         self.board.delegate = self

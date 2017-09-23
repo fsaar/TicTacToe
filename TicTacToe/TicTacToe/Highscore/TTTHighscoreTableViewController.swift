@@ -51,7 +51,8 @@ extension TTTHighscoreTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:TTTHighscoreCell.self), for: indexPath)
         if let cell = cell as? TTTHighscoreCell,let score = self.fetchResultsController.fetchedObjects?[indexPath.row] {
-            cell.configure(with: score)
+            let viewModel = TTTHighscoreViewModel(with: score)
+            cell.configure(with: viewModel)
         }
         return cell
     }
