@@ -1,5 +1,8 @@
 # Xcode
 #
+prebuild.log
+.build
+Package.resolved
 build/
 *.pbxuser
 !default.pbxuser

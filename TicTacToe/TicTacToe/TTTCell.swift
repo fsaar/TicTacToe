@@ -6,9 +6,9 @@ extension TTTState {
         var image : UIImage?
         switch self {
         case .greenSelected:
-            image = UIImage(named: "Green")
+            image = #imageLiteral(resourceName: "Green")
         case .redSelected:
-            image = UIImage(named: "Red")
+            image = #imageLiteral(resourceName: "Red")
         default:
             break
         }

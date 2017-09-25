@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0900"
-   version = "1.7">
+   version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "56F6DADA1D7219EB0007E476"
-               BuildableName = "TicTacToe.app"
-               BlueprintName = "TicTacToe"
-               ReferencedContainer = "container:TicTacToe.xcodeproj">
+               BlueprintIdentifier = "highscoreserver::highscoreserver"
+               BuildableName = "highscoreserver"
+               BlueprintName = "highscoreserver"
+               ReferencedContainer = "container:highscoreserver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,10 +33,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56F6DADA1D7219EB0007E476"
-            BuildableName = "TicTacToe.app"
-            BlueprintName = "TicTacToe"
-            ReferencedContainer = "container:TicTacToe.xcodeproj">
+            BlueprintIdentifier = "highscoreserver::highscoreserver"
+            BuildableName = "highscoreserver"
+            BlueprintName = "highscoreserver"
+            ReferencedContainer = "container:highscoreserver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -53,32 +53,14 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <PreActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "exec &gt; ${PROJECT_DIR}/prebuild.log 2&gt;&amp;1&#10;find ${PROJECT_DIR}/.. -perm +0111 -type f -name highscoreserver -exec sh -c &apos;{} &amp;&apos; \;&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "56F6DADA1D7219EB0007E476"
-                     BuildableName = "TicTacToe.app"
-                     BlueprintName = "TicTacToe"
-                     ReferencedContainer = "container:TicTacToe.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PreActions>
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56F6DADA1D7219EB0007E476"
-            BuildableName = "TicTacToe.app"
-            BlueprintName = "TicTacToe"
-            ReferencedContainer = "container:TicTacToe.xcodeproj">
+            BlueprintIdentifier = "highscoreserver::highscoreserver"
+            BuildableName = "highscoreserver"
+            BlueprintName = "highscoreserver"
+            ReferencedContainer = "container:highscoreserver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56F6DADA1D7219EB0007E476"
-            BuildableName = "TicTacToe.app"
-            BlueprintName = "TicTacToe"
-            ReferencedContainer = "container:TicTacToe.xcodeproj">
+            BlueprintIdentifier = "highscoreserver::highscoreserver"
+            BuildableName = "highscoreserver"
+            BlueprintName = "highscoreserver"
+            ReferencedContainer = "container:highscoreserver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

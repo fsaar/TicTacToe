@@ -6,7 +6,33 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		56AA27ED1F752180004CC6D4 /* FetchDependencies */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 56AA27EE1F752180004CC6D4 /* Build configuration list for PBXAggregateTarget "FetchDependencies" */;
+			buildPhases = (
+				56AA27F11F75218B004CC6D4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = FetchDependencies;
+			productName = FetchDependencies;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		56347DB31F7658F50080FBD5 /* TTTHighscoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */; };
+		5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */; };
+		569744D11F72DCB10001E7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE51D7219EB0007E476 /* Assets.xcassets */; };
+		56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */; };
+		56AA27761F740B40004CC6D4 /* TTTNotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */; };
+		56AA27791F741161004CC6D4 /* TicTacToe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */; };
+		56AA27811F74135D004CC6D4 /* TTTCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */; };
+		56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA27841F7415A3004CC6D4 /* CoreData.framework */; };
+		56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */; };
+		56AA27911F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */; };
+		56BD51461F7547D5001A9E42 /* TTTHighscoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */; };
+		56BD51481F76440C001A9E42 /* TTTHighscoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */; };
 		56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */; };
 		56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */; };
 		56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE21D7219EB0007E476 /* Main.storyboard */; };
@@ -29,19 +55,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		56AA27E11F751FC1004CC6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56FABCD11EB74EC800FC871A;
+			remoteInfo = TicTacToeWatch;
+		};
+		56AA27F21F75228E004CC6D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56AA27ED1F752180004CC6D4;
+			remoteInfo = FetchDependencies;
+		};
 		56FABCE01EB74EC900FC871A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 56FABCDD1EB74EC900FC871A;
 			remoteInfo = "TicTacToeWatch Extension";
-		};
-		56FABCEE1EB74EC900FC871A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 56F6DAD31D7219EB0007E476 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56FABCD11EB74EC800FC871A;
-			remoteInfo = TicTacToeWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,11 +104,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreViewModel.swift; sourceTree = "<group>"; };
+		5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBackendClient.swift; sourceTree = "<group>"; };
+		5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNetworkManager.swift; sourceTree = "<group>"; };
+		56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNotificationObserver.swift; sourceTree = "<group>"; };
+		56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TicTacToe.xcdatamodel; sourceTree = "<group>"; };
+		56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTCoreDataStack.swift; sourceTree = "<group>"; };
+		56AA27841F7415A3004CC6D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataClass.swift"; sourceTree = "<group>"; };
+		56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TTTHighscore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreTableViewController.swift; sourceTree = "<group>"; };
+		56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreCell.swift; sourceTree = "<group>"; };
 		56F6DADB1D7219EB0007E476 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTAppDelegate.swift; sourceTree = "<group>"; };
 		56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBoardController.swift; sourceTree = "<group>"; };
 		56F6DAE31D7219EB0007E476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		56F6DAE51D7219EB0007E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56F6DAE51D7219EB0007E476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TicTacToe/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		56F6DAEA1D7219EB0007E476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F6DAF01D721AA50007E476 /* TTTBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTBoard.swift; sourceTree = "<group>"; };
 		56F6DAF21D721B5B0007E476 /* TTTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTCell.swift; sourceTree = "<group>"; };
@@ -101,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +159,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */ = {
+			isa = PBXGroup;
+			children = (
+				56AA27751F740AD6004CC6D4 /* TTTNotificationObserver.swift */,
+			);
+			path = TTTNotificationObserver;
+			sourceTree = "<group>";
+		};
+		56AA277A1F7412A2004CC6D4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				56AA277E1F7412C6004CC6D4 /* TTTCoreDataStack.swift */,
+				56AA277B1F7412A2004CC6D4 /* Model */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		56AA277B1F7412A2004CC6D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56AA278E1F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift */,
+				56AA278F1F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56AA27831F7415A3004CC6D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56AA27841F7415A3004CC6D4 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56BD51431F7547A8001A9E42 /* Highscore */ = {
+			isa = PBXGroup;
+			children = (
+				56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */,
+				56BD51471F76440C001A9E42 /* TTTHighscoreCell.swift */,
+				56BD51451F7547D5001A9E42 /* TTTHighscoreTableViewController.swift */,
+			);
+			path = Highscore;
+			sourceTree = "<group>";
+		};
 		56F6DAD21D7219EB0007E476 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +210,7 @@
 				56FABCD31EB74EC900FC871A /* TicTacToeWatch */,
 				56FABCE21EB74EC900FC871A /* TicTacToeWatch Extension */,
 				56F6DADC1D7219EB0007E476 /* Products */,
+				56AA27831F7415A3004CC6D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +227,12 @@
 		56F6DADD1D7219EB0007E476 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */,
+				56BD51431F7547A8001A9E42 /* Highscore */,
+				56AA277A1F7412A2004CC6D4 /* CoreData */,
+				56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */,
+				5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */,
+				5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */,
 				56F6DADE1D7219EB0007E476 /* TTTAppDelegate.swift */,
 				56F6DAE01D7219EB0007E476 /* TTTBoardController.swift */,
 				56F6DAF01D721AA50007E476 /* TTTBoard.swift */,
@@ -207,7 +303,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				56FABCEF1EB74EC900FC871A /* PBXTargetDependency */,
+				56AA27F31F75228E004CC6D4 /* PBXTargetDependency */,
+				56AA27E21F751FC1004CC6D4 /* PBXTargetDependency */,
 			);
 			name = TicTacToe;
 			productName = TicTacToe;
@@ -254,10 +351,14 @@
 		56F6DAD31D7219EB0007E476 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SAMedialabs;
 				TargetAttributes = {
+					56AA27ED1F752180004CC6D4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					56F6DADA1D7219EB0007E476 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
@@ -288,6 +389,7 @@
 				56F6DADA1D7219EB0007E476 /* TicTacToe */,
 				56FABCD11EB74EC800FC871A /* TicTacToeWatch */,
 				56FABCDD1EB74EC900FC871A /* TicTacToeWatch Extension */,
+				56AA27ED1F752180004CC6D4 /* FetchDependencies */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F6DB031D735DD00007E476 /* Localizable.strings in Resources */,
+				569744D11F72DCB10001E7BA /* Assets.xcassets in Resources */,
 				56F6DAE41D7219EB0007E476 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,16 +424,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56AA27F11F75218B004CC6D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../highscoreserver\nswift package fetch\nswift build || exit 1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56F6DAD71D7219EB0007E476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56347DB31F7658F50080FBD5 /* TTTHighscoreViewModel.swift in Sources */,
 				56F6DAF31D721B5B0007E476 /* TTTCell.swift in Sources */,
 				56F6DAF51D7309D90007E476 /* TTTBoardConfig.swift in Sources */,
+				56AA27761F740B40004CC6D4 /* TTTNotificationObserver.swift in Sources */,
 				56F6DAF11D721AA50007E476 /* TTTBoard.swift in Sources */,
 				56F6DAE11D7219EB0007E476 /* TTTBoardController.swift in Sources */,
+				56AA27541F7403DF004CC6D4 /* TTTNetworkManager.swift in Sources */,
+				56AA27811F74135D004CC6D4 /* TTTCoreDataStack.swift in Sources */,
+				56BD51461F7547D5001A9E42 /* TTTHighscoreTableViewController.swift in Sources */,
+				5673A8B21F73FD5900E8B73C /* TTTBackendClient.swift in Sources */,
+				56BD51481F76440C001A9E42 /* TTTHighscoreCell.swift in Sources */,
+				56AA27791F741161004CC6D4 /* TicTacToe.xcdatamodeld in Sources */,
 				56F6DADF1D7219EB0007E476 /* TTTAppDelegate.swift in Sources */,
+				56AA27901F741908004CC6D4 /* TTTHighscore+CoreDataClass.swift in Sources */,
+				56AA27911F741908004CC6D4 /* TTTHighscore+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,15 +480,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		56AA27E21F751FC1004CC6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56FABCD11EB74EC800FC871A /* TicTacToeWatch */;
+			targetProxy = 56AA27E11F751FC1004CC6D4 /* PBXContainerItemProxy */;
+		};
+		56AA27F31F75228E004CC6D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56AA27ED1F752180004CC6D4 /* FetchDependencies */;
+			targetProxy = 56AA27F21F75228E004CC6D4 /* PBXContainerItemProxy */;
+		};
 		56FABCE11EB74EC900FC871A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 56FABCDD1EB74EC900FC871A /* TicTacToeWatch Extension */;
 			targetProxy = 56FABCE01EB74EC900FC871A /* PBXContainerItemProxy */;
-		};
-		56FABCEF1EB74EC900FC871A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 56FABCD11EB74EC800FC871A /* TicTacToeWatch */;
-			targetProxy = 56FABCEE1EB74EC900FC871A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,6 +525,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		56AA27EF1F752180004CC6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF4LJPC23U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56AA27F01F752180004CC6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF4LJPC23U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		56F6DAEB1D7219EB0007E476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -496,6 +648,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
 				INFOPLIST_FILE = TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,6 +764,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56AA27EE1F752180004CC6D4 /* Build configuration list for PBXAggregateTarget "FetchDependencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56AA27EF1F752180004CC6D4 /* Debug */,
+				56AA27F01F752180004CC6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		56F6DAD61D7219EB0007E476 /* Build configuration list for PBXProject "TicTacToe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -647,6 +810,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56AA27771F741161004CC6D4 /* TicTacToe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */,
+			);
+			currentVersion = 56AA27781F741161004CC6D4 /* TicTacToe.xcdatamodel */;
+			path = TicTacToe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56F6DAD31D7219EB0007E476 /* Project object */;
 }
