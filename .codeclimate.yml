@@ -9,3 +9,4 @@ ratings:
 
 except:
     - parenthesis-whitespace
+    - trailing-whitespace 
