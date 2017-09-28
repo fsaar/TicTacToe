@@ -6,3 +6,6 @@ ratings:
   paths:
   - "**.swift"
   exclude_paths: []
+
+except:
+    - parenthesis-whitespace
