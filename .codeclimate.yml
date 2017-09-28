@@ -7,6 +7,3 @@ ratings:
   - "**.swift"
   exclude_paths: []
 
-except:
-    - parenthesis-whitespace
-    - trailing-whitespace 
