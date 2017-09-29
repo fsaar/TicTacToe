@@ -1,7 +1,7 @@
 [![Travis Build Status](https://travis-ci.org/fsaar/TicTacToe.svg?branch=master)](https://travis-ci.org/fsaar/TicTacToe)
 [![Bitrise Build Status](https://www.bitrise.io/app/c950f49b3ee5795f/status.svg?token=5MpiXv8NPFeKGcieFpXdHA&branch=master)](https://www.bitrise.io/app/c950f49b3ee5795f)
 [![Code Climate](https://codeclimate.com/github/fsaar/TicTacToe/badges/gpa.svg)](https://codeclimate.com/github/fsaar/TicTacToe)
-[![Codebeat](https://codebeat.co/assets/svg/badges/A-398b39-669406e9e1b136187b91af587d4092b0160370f271f66a651f444b990c2730e9.svg)](https://codebeat.co/projects/github-com-fsaar-tictactoe-master#)
+[![codebeat badge](https://codebeat.co/badges/686bbc0f-9f28-434c-bcfd-0c7e39becda0)](https://codebeat.co/projects/github-com-fsaar-tictactoe-master)
 
 # TicTacToe 
 
