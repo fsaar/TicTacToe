@@ -7,5 +7,5 @@
 
 An implementation of TicTacToe
 
-[![TicTacToe](https://static1.squarespace.com/static/56e48990f699bb97173ad03c/t/57e6c214e4fcb5e38dfd78c0/1474740773287)](https://www.allaboutswift.com/dev/2016/9/11/an-exercise-in-swift)
+[![TicTacToe](https://static1.squarespace.com/static/56e48990f699bb97173ad03c/t/59d114ee6f4ca3b208720044/1506874664263](https://www.allaboutswift.com/dev/2016/9/11/an-exercise-in-swift))
 
