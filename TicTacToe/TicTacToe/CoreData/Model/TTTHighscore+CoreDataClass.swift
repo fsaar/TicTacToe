@@ -60,12 +60,12 @@ public class TTTHighscore: NSManagedObject,Codable {
             throw TTTHighscore.decoder_no_entity_description
         }
         super.init(entity: entityDescription, insertInto: context)
-        
-        name = dict[CodingKeys.name.rawValue] as? String
-        position = dict[CodingKeys.position.rawValue] as? Int16 ?? 0
-        moves = dict[CodingKeys.moves.rawValue] as? Int16 ?? 0
-        time = dict[CodingKeys.time.rawValue] as? Float ?? 0
-        identifier = dict[CodingKeys.identifier.rawValue] as? String
+
+        self.name = dict[CodingKeys.name.rawValue] as? String
+        self.position = dict[CodingKeys.position.rawValue] as? Int16 ?? 0
+        self.moves = dict[CodingKeys.moves.rawValue] as? Int16 ?? 0
+        self.time = dict[CodingKeys.time.rawValue] as? Float ?? 0
+        self.identifier = dict[CodingKeys.identifier.rawValue] as? String
     }
 }
 

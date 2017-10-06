@@ -58,7 +58,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "exec &gt; ${PROJECT_DIR}/prebuild.log 2&gt;&amp;1&#10;find ${PROJECT_DIR}/.. -perm +0111 -type f -name highscoreserver -exec sh -c &apos;{} &amp;&apos; \;&#10;">
+               scriptText = "exec &gt; ${PROJECT_DIR}/prebuild.log 2&gt;&amp;1&#10;kill $(ps aux | grep -in &apos;/debug/highscoreserver&apos; | awk -F &apos; &apos; &apos;{print $2&quot; &quot;$11}&apos; | grep &apos;server$&apos; | awk -F &apos; &apos; &apos;{print $1}&apos;)&#10;find ${PROJECT_DIR}/.. -perm +0111 -type f -name highscoreserver -exec sh -c &apos;{} &amp;&apos; \;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -81,6 +81,12 @@
             ReferencedContainer = "container:TicTacToe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-com.apple.CoreData.ConcurrencyDebug 1"
+            isEnabled = "NO">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

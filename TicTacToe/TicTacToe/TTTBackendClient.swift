@@ -67,45 +67,43 @@ extension TTTBackendClient {
                 try? context.save()
             }
         }
-        var scores : [TTTHighscore]? = nil
         context.performAndWait {
+            var scores : [TTTHighscore]? = nil
             scores =  try? context.fetch(fetchRequest)
             
-        }
-        guard let oldScores = scores else {
-             _ = highscores.flatMap { try? TTTHighscore(from: $0, with: context)}
-            return
-        }
-        let oldIdentifiers = oldScores.flatMap { $0.identifier }
-        let newIdentifiers = highscores.flatMap { dict in
-            return dict["identifier"] as? String
-        }
-        let oldIdentifiersSet  = Set(oldIdentifiers)
-        let newIdentifiersSet = Set(newIdentifiers)
-        let toBeInserted = newIdentifiersSet.subtracting(oldIdentifiersSet)
-        let toBeDeleted = oldIdentifiersSet.subtracting(newIdentifiersSet)
-        let toBeUpdated = oldIdentifiersSet.intersection(newIdentifiersSet)
-
-        toBeUpdated.forEach { identifier in
-            let oldScore = oldScores.filter ({ $0.identifier == identifier}).first
-            let newScoreDict = dictionary(with: identifier, in: highscores)
-            if let oldScore = oldScore, let position = newScoreDict?["position"] as? Int16 {
-                oldScore.position = position
+            guard let oldScores = scores else {
+                _ = highscores.flatMap { try? TTTHighscore(from: $0, with: context)}
+                return
             }
-        }
-
-        toBeDeleted.forEach { identifier in
-            if let oldScore = oldScores.filter ({ $0.identifier == identifier}).first {
-                context.perform {
+            let oldIdentifiers = oldScores.flatMap { $0.identifier }
+            let newIdentifiers = highscores.flatMap { dict in
+                return dict["identifier"] as? String
+            }
+            let oldIdentifiersSet  = Set(oldIdentifiers)
+            let newIdentifiersSet = Set(newIdentifiers)
+            let toBeInserted = newIdentifiersSet.subtracting(oldIdentifiersSet)
+            let toBeDeleted = oldIdentifiersSet.subtracting(newIdentifiersSet)
+            let toBeUpdated = oldIdentifiersSet.intersection(newIdentifiersSet)
+            toBeUpdated.forEach { identifier in
+                let oldScore = oldScores.filter ({ $0.identifier == identifier}).first
+                let newScoreDict = dictionary(with: identifier, in: highscores)
+                if let oldScore = oldScore, let position = newScoreDict?["position"] as? Int16 {
+                    oldScore.position = position
+                }
+            }
+            
+            toBeDeleted.forEach { identifier in
+                if let oldScore = oldScores.filter ({ $0.identifier == identifier}).first {
                     context.delete(oldScore)
+                }
+            }
+            
+            toBeInserted.forEach { identifier  in
+                if let newScoreDict = dictionary(with: identifier, in: highscores) {
+                    _ = try? TTTHighscore(from: newScoreDict, with: context)
                 }
             }
         }
         
-        toBeInserted.forEach { identifier  in
-            if let newScoreDict = dictionary(with: identifier, in: highscores) {
-                _ = try? TTTHighscore(from: newScoreDict, with: context)
-            }
-        }
     }
 }
