@@ -9,23 +9,8 @@ import Foundation
 import Kitura
 import LoggerAPI
 import HeliumLogger
-import SwiftyJSON
 
 
-extension HighscoreItem {
-    init?(with json :JSON)  {
-        guard let jsonName = json["name"].string,
-            let jsonTime = json["time"].float,
-            let jsonMoves = json["moves"].int else {
-                return nil
-        }
-        position = nil
-        identifier = NSUUID().uuidString
-        name = jsonName
-        time = jsonTime
-        moves = jsonMoves
-    }
-}
 
 class HighScoreRouter {
     let highScore = Highscore()
@@ -35,7 +20,7 @@ class HighScoreRouter {
             try response.status(.badRequest).end()
             return
         }
-        if let item = HighscoreItem(with: json) {
+        if let item = HighscoreItem.item(with: json) {
             highScore.addScore(item)
         }
         _ = response.send(status: .OK)
@@ -48,12 +33,7 @@ class HighScoreRouter {
         defer {
             next()
         }
-        guard let jsonData = try? JSONEncoder().encode(list) else {
-            response.status(.OK).send(json: [[]])
-            return
-        }
-        let jsonArray = JSON(data:jsonData).arrayObject ?? []
-        response.status(.OK).send(json: jsonArray)
+        response.status(.OK).send(json: list)
     }
     
     func getHTMLScores(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws -> Void {

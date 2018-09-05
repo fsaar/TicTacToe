@@ -35,3 +35,5 @@ report.xml
 # OSX
 #
 *.DS_Store
+TicTacToe.xcworkspace/xcshareddata/
+highscoreserver/highscoreserver.xcodeproj/*

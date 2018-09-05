@@ -7,10 +7,9 @@ let package = Package(
     name: "highscoreserver",
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "1.7.9"),
+        .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.5.0"),
         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.7.1"),
-        .package(url: "https://github.com/IBM-Swift/Kitura-StencilTemplateEngine.git",from: "1.8.3"),
-        
+        .package(url: "https://github.com/IBM-Swift/Kitura-StencilTemplateEngine.git",from: "1.10.0"),        
     ],
     targets: [
         .target(

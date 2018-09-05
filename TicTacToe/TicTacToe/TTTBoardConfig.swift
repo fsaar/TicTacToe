@@ -146,16 +146,7 @@ public struct TTTBoardConfig : Equatable {
     }
     
     func isComplete() -> [TTTBoardPosition]? {
-        var isComplete = false
-        var completedRow : [TTTBoardPosition]?
-        for row in self.validationRows where !isComplete {
-            let normalizedRow = row.flatMap { $0 }
-            isComplete = self.isComplete(normalizedRow )
-            if (isComplete)
-            {
-                completedRow = normalizedRow
-            }
-        }
+        let completedRow  = self.validationRows.lazy.filter ({ self.isComplete($0) }).first
         return completedRow
     }
 }

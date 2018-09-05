@@ -312,7 +312,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Highscore" largeTitleDisplayMode="always" id="AMr-mu-j7F">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="7YG-UA-XlB">
+                        <barButtonItem key="leftBarButtonItem" style="bordered" id="7YG-UA-XlB">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sez-uX-1Cy">
                                 <rect key="frame" x="16" y="7" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

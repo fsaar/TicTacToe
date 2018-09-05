@@ -37,7 +37,7 @@ class TTTBackendClient {
         }
     }
     
-    func postHigscore(with name : String,moves : Int, time : Float,callBack onQueue: OperationQueue = OperationQueue.main,using completionBlock: ((_ error : Error?) -> ())? = nil) {
+    func postHigscore(with name : String,moves : Int, time : Float,callBack onQueue: OperationQueue = .main,using completionBlock: ((_ error : Error?) -> ())? = nil) {
         let dict : [String : Any] = [ "name" : name, "moves" : moves, "time" : time]
         if let data = try? JSONSerialization.data(withJSONObject: dict, options: []) {
             manager.postData(data: data, withRelativePath: TTTBackendClientAPI.highscore.rawValue) { error in
@@ -72,11 +72,11 @@ extension TTTBackendClient {
             scores =  try? context.fetch(fetchRequest)
             
             guard let oldScores = scores else {
-                _ = highscores.flatMap { try? TTTHighscore(from: $0, with: context)}
+                _ = highscores.compactMap { try? TTTHighscore(from: $0, with: context)}
                 return
             }
-            let oldIdentifiers = oldScores.flatMap { $0.identifier }
-            let newIdentifiers = highscores.flatMap { dict in
+            let oldIdentifiers = oldScores.compactMap { $0.identifier }
+            let newIdentifiers = highscores.compactMap { dict in
                 return dict["identifier"] as? String
             }
             let oldIdentifiersSet  = Set(oldIdentifiers)
