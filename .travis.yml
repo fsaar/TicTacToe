@@ -3,8 +3,7 @@ language: objective-c
 osx_image: xcode10
 
 script:
-- xcrun  instruments -w "iPhone 7 (11.4) [3783E9FF-F5A4-4132-91DD-261AC70C67A0] (Simulator)" || true
-- xcodebuild -workspace TicTacToe.xcworkspace -scheme TicTacToe -destination 'platform=iOS Simulator,name=iPhone 8' -sdk iphonesimulator clean build CODE_SIGNING_REQUIRED=NO  ONLY_ACTIVE_ARCH=NO  RUN_CLANG_STATIC_ANALYZER=YES
+- xcodebuild -workspace TicTacToe.xcworkspace -scheme TicTacToe -destination 'platform=iOS Simulator,name=iPhone 8' clean build CODE_SIGNING_REQUIRED=NO  ONLY_ACTIVE_ARCH=NO  RUN_CLANG_STATIC_ANALYZER=YES
 
 notifications:
     slack: samedialabs:4HGYk0UNrHO3pRwlyMjsFdkX
