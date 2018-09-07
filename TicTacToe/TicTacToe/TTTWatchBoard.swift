@@ -73,7 +73,7 @@ private extension TTTBoard {
             let isSortedBefore = isInSameRow ? isLeftOf : isAbove
             return isSortedBefore
         }
-        let positions = TTTBoardPositionSequence().map{ $0 }
+        let positions = Array(TTTBoardPositionSequence())
         let sortedCellsPositions = zip(sortedCells,positions)
         for (cell,position) in sortedCellsPositions
         {
@@ -88,4 +88,3 @@ private extension TTTBoard {
         }
     }
 }
-

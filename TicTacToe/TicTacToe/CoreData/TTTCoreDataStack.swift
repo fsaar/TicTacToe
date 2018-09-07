@@ -42,10 +42,10 @@ class TTTCoreDataStack {
         storeCoordinator = NSPersistentStoreCoordinator(managedObjectModel: models)
         _ = initCoreData(storeCoordinator)
         
-        self.backgroundNotificationObserver = TTTNotificationObserver(notification: UIApplication.didEnterBackgroundNotification.rawValue, handlerBlock: { [weak self] (notification) in
+        self.backgroundNotificationObserver = TTTNotificationObserver(notification: UIApplication.didEnterBackgroundNotification.rawValue) { [weak self] _ in
             self?.privateQueueManagedObjectContext.performAndWait {
                 _ = try? self?.privateQueueManagedObjectContext.save()
             }
-        });
+        }
     }
 }

@@ -45,9 +45,9 @@ extension TTTNotificationObserver {
         NotificationCenter.default.removeObserver(self)
     }
     
-    @objc func notificationHandler(_ notification : Notification!)
+    @objc func notificationHandler(_ notification : Notification)
     {
-        if (enabled)
+        if enabled
         {
             handlerBlock(notification)
         }

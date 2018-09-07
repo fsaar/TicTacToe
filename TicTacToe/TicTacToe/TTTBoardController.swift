@@ -112,7 +112,7 @@ private extension TTTBoardController {
 
 private extension TTTBoardController {
     func checkHighscoreReachability() {
-        client.getHighScore() { [weak self] _,error in
+        client.getHighScore { [weak self] _,error in
             if case .none = error {
                 self?.showHighScoreButton.isHidden = false
             }

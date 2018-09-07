@@ -17,6 +17,3 @@ router.get("/highscore.html",handler:highScoreRouter.getHTMLScores)
 
 Kitura.addHTTPServer(onPort: 8090, with: router)
 Kitura.run()
-
-
-

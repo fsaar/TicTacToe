@@ -40,7 +40,7 @@ class TTTHighscoreTableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.titleView = self.titleLabel
         self.navigationController?.navigationBar.barTintColor = .black
-        client.getHighScore() { highscore,_ in
+        client.getHighScore { _,_ in
             self.tableView.reloadData()
         }
     }

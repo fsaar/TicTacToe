@@ -15,7 +15,7 @@ import HeliumLogger
 class HighScoreRouter {
     let highScore = Highscore()
     
-    func postScore(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws -> Void {
+    func postScore(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws  {
         guard let json = request.body?.asJSON else {
             try response.status(.badRequest).end()
             return
@@ -28,7 +28,7 @@ class HighScoreRouter {
     }
     
    
-    func getJSONScores(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws -> Void {
+    func getJSONScores(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws {
         let list = highScore.all()
         defer {
             next()
@@ -36,7 +36,7 @@ class HighScoreRouter {
         response.status(.OK).send(json: list)
     }
     
-    func getHTMLScores(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws -> Void {
+    func getHTMLScores(request : RouterRequest,response : RouterResponse, next : @escaping () -> Void) throws {
         defer {
             next()
         }

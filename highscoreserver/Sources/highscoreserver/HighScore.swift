@@ -73,12 +73,10 @@ class Highscore {
 }
 
 
-//MARK: Private
+// MARK: Private
 fileprivate extension Highscore {
     func newList(with item : HighscoreItem) -> [HighscoreItem] {
-        return (list + [item]).sorted { $0.time < $1.time }.enumerated().map { index,item in
-            return item.item(with: index)
-        }
+        return (list + [item]).sorted { $0.time < $1.time }.enumerated().map { index,item in item.item(with: index) }
     }
     
     func save(highscore : [HighscoreItem]) {
