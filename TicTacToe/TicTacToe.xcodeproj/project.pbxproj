@@ -52,7 +52,7 @@
 		56FABCFE1EB7663900FC871A /* TTTWatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FABCFD1EB7663900FC871A /* TTTWatchCell.swift */; };
 		56FABCFF1EB7A43A00FC871A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6DAE51D7219EB0007E476 /* Assets.xcassets */; };
 		56FABD021EB7A7FE00FC871A /* TTTGameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FABD011EB7A7FE00FC871A /* TTTGameOverController.swift */; };
-		E53CF6024BD76267CD7188EB /* libPods-TicTacToe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E245DCE94CBC255303091475 /* libPods-TicTacToe.a */; };
+		C46855A278E54B259FB61148 /* libPods-TicTacToe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A67EA0B166EAB56F8600C96E /* libPods-TicTacToe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +105,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		376A9FFE050BDB8EADA8F950 /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
 		56347DB21F7658F40080FBD5 /* TTTHighscoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTHighscoreViewModel.swift; sourceTree = "<group>"; };
 		5673A8B11F73FD5900E8B73C /* TTTBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTBackendClient.swift; sourceTree = "<group>"; };
 		5673A8B31F73FD9100E8B73C /* TTTNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTTNetworkManager.swift; sourceTree = "<group>"; };
@@ -139,9 +140,8 @@
 		56FABCFB1EB751E900FC871A /* TTTWatchBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTWatchBoard.swift; sourceTree = "<group>"; };
 		56FABCFD1EB7663900FC871A /* TTTWatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTWatchCell.swift; sourceTree = "<group>"; };
 		56FABD011EB7A7FE00FC871A /* TTTGameOverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTGameOverController.swift; sourceTree = "<group>"; };
-		C87D2233CD9BC1B225D8AB44 /* Pods-TicTacToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.release.xcconfig"; sourceTree = "<group>"; };
-		D21945B08BD97FDE2DBF902B /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
-		E245DCE94CBC255303091475 /* libPods-TicTacToe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67EA0B166EAB56F8600C96E /* libPods-TicTacToe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9096B6389ABBF8CAEFA4CEB /* Pods-TicTacToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToe.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TicTacToe/Pods-TicTacToe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56AA27851F7415A3004CC6D4 /* CoreData.framework in Frameworks */,
-				E53CF6024BD76267CD7188EB /* libPods-TicTacToe.a in Frameworks */,
+				C46855A278E54B259FB61148 /* libPods-TicTacToe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70B93850D31FD86D34B43231 /* Frameworks */ = {
+		F5754C2FE80BCB20BA3FAC53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -171,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203466BCF04CA18137706949 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9096B6389ABBF8CAEFA4CEB /* Pods-TicTacToe.debug.xcconfig */,
+				376A9FFE050BDB8EADA8F950 /* Pods-TicTacToe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		56AA27741F740AD6004CC6D4 /* TTTNotificationObserver */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				56AA27841F7415A3004CC6D4 /* CoreData.framework */,
-				E245DCE94CBC255303091475 /* libPods-TicTacToe.a */,
+				A67EA0B166EAB56F8600C96E /* libPods-TicTacToe.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,7 +233,7 @@
 				56FABCE21EB74EC900FC871A /* TicTacToeWatch Extension */,
 				56F6DADC1D7219EB0007E476 /* Products */,
 				56AA27831F7415A3004CC6D4 /* Frameworks */,
-				C56131ADF7930BB84B52C388 /* Pods */,
+				203466BCF04CA18137706949 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,15 +311,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C56131ADF7930BB84B52C388 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D21945B08BD97FDE2DBF902B /* Pods-TicTacToe.debug.xcconfig */,
-				C87D2233CD9BC1B225D8AB44 /* Pods-TicTacToe.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,12 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56F6DAED1D7219EB0007E476 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
 			buildPhases = (
-				D711415F1EDE351DE1F6CF38 /* [CP] Check Pods Manifest.lock */,
+				8AB31A99C564CD9A5D0FEDAD /* [CP] Check Pods Manifest.lock */,
 				56F6DAD71D7219EB0007E476 /* Sources */,
 				56F6DAD81D7219EB0007E476 /* Frameworks */,
 				56F6DAD91D7219EB0007E476 /* Resources */,
 				56FABCF81EB74EC900FC871A /* Embed Watch Content */,
-				565A20E121430D7F0077A320 /* Swift Lint */,
+				565A20E22143182B0077A320 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -342,7 +342,7 @@
 			buildPhases = (
 				56FABCD01EB74EC800FC871A /* Resources */,
 				56FABCF61EB74EC900FC871A /* Embed App Extensions */,
-				70B93850D31FD86D34B43231 /* Frameworks */,
+				F5754C2FE80BCB20BA3FAC53 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,7 +378,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SAMedialabs;
 				TargetAttributes = {
 					56AA27ED1F752180004CC6D4 = {
@@ -387,7 +387,7 @@
 					};
 					56F6DADA1D7219EB0007E476 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 0800;
 					};
 					56FABCD11EB74EC800FC871A = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -395,7 +395,6 @@
 					};
 					56FABCDD1EB74EC900FC871A = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -452,18 +451,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		565A20E121430D7F0077A320 /* Swift Lint */ = {
+		565A20E22143182B0077A320 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = "Swift Lint";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,9 +476,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ../highscoreserver\nswift package resolve\nswift build || exit 1\n";
+			shellScript = "cd \"${PROJECT_DIR}/../highscoreserver\"\nswift package resolve\n/bin/sh -c swift build || exit 1\n";
 		};
-		D711415F1EDE351DE1F6CF38 /* [CP] Check Pods Manifest.lock */ = {
+		8AB31A99C564CD9A5D0FEDAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -619,14 +614,12 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -658,6 +651,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -674,14 +668,12 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -705,14 +697,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		56F6DAEE1D7219EB0007E476 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D21945B08BD97FDE2DBF902B /* Pods-TicTacToe.debug.xcconfig */;
+			baseConfigurationReference = D9096B6389ABBF8CAEFA4CEB /* Pods-TicTacToe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
@@ -721,13 +713,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		56F6DAEF1D7219EB0007E476 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C87D2233CD9BC1B225D8AB44 /* Pods-TicTacToe.release.xcconfig */;
+			baseConfigurationReference = 376A9FFE050BDB8EADA8F950 /* Pods-TicTacToe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF4LJPC23U;
@@ -737,7 +728,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samedialabs.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -801,7 +791,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -825,7 +815,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
