@@ -143,4 +143,3 @@ fileprivate extension TTTInterfaceController {
         self.state = .started
     }
 }
-

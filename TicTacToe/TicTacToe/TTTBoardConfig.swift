@@ -63,7 +63,7 @@ public class TTTBoardPositionGenerator: IteratorProtocol {
         currentPos = TTTBoardPosition(column: 0 , row: currentPos.row + 1)
         currentPos.column = 0
         
-        if (currentPos.row < max.rows) {
+        if currentPos.row < max.rows {
             return currentPos
         }
         return nil
@@ -103,24 +103,18 @@ public struct TTTBoardConfig : Equatable {
     }
     
     static func empty() -> TTTBoardConfig {
-        let emptyStates = (1...9).map { _ in return TTTState.undefined }
+        let emptyStates = (1...9).map { _ in TTTState.undefined }
         return TTTBoardConfig(board: emptyStates)
     }
     
     var isEmpty : Bool {
-        get {
-           return  self.states.filter { $0 != .undefined }.count == self.states.count
-        }
+        return  self.states.filter { $0 != .undefined }.count == self.states.count
     }
     var redCount : Int {
-        get {
-            return  self.states.filter { $0 == .redSelected }.count
-        }
+        return  self.states.filter { $0 == .redSelected }.count
     }
     var greenCount : Int {
-        get {
-            return  self.states.filter { $0 == .greenSelected }.count
-        }
+        return  self.states.filter { $0 == .greenSelected }.count
     }
     
     let states : [TTTState]
@@ -146,16 +140,7 @@ public struct TTTBoardConfig : Equatable {
     }
     
     func isComplete() -> [TTTBoardPosition]? {
-        var isComplete = false
-        var completedRow : [TTTBoardPosition]?
-        for row in self.validationRows where !isComplete {
-            let normalizedRow = row.flatMap { $0 }
-            isComplete = self.isComplete(normalizedRow )
-            if (isComplete)
-            {
-                completedRow = normalizedRow
-            }
-        }
+        let completedRow  = self.validationRows.lazy.filter { self.isComplete($0) }.first
         return completedRow
     }
 }
@@ -228,14 +213,14 @@ extension TTTBoardConfig {
     
     func attackMove(forPartySelectingRed selectingRed : Bool) -> TTTBoardPosition? {
         if (self.redCount == 0) && selectingRed  {
-            if (self[TTTBoardPosition(column:1, row: 1)] == .undefined) {
+            if self[TTTBoardPosition(column:1, row: 1)] == .undefined {
                 return TTTBoardPosition(column:1, row: 1)
             }
             let startIndex = Int(arc4random() % 9)
             return nextUndefinedPosition(startingAtIndex:startIndex)
         }
         if (self.greenCount == 0) && !selectingRed {
-            if (self[TTTBoardPosition(column:1, row: 1)] == .undefined) {
+            if self[TTTBoardPosition(column:1, row: 1)] == .undefined {
                 return TTTBoardPosition(column:1, row: 1)
             }
             let startIndex = Int(arc4random() % 9)

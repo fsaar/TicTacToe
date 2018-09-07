@@ -49,13 +49,12 @@ public class TTTWatchBoard : NSObject {
 /// MARK : Setup
 private extension TTTWatchBoard {
     func setupCellPositions(sortedCells : [WKInterfaceButton]) {
-        let positions = TTTBoardPositionSequence().map{ $0 }
+        let positions = Array(TTTBoardPositionSequence())
         let sortedCellsPositions = zip(sortedCells,positions)
-        sortedCellsPositions.forEach { (cell,position) in
+        sortedCellsPositions.forEach { cell,position in
             let watchCell = TTTWatchCell(position: position, button: cell)
             self.cells += [watchCell]
         }
     }
     
 }
-

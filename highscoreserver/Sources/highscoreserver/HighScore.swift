@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 struct HighscoreItem : Codable,Equatable,CustomStringConvertible {
     public var description: String {
@@ -20,6 +19,19 @@ struct HighscoreItem : Codable,Equatable,CustomStringConvertible {
     let time : Float
     let moves : Int
     let identifier : String?
+    
+    static func item(with json :[String : Any]) -> HighscoreItem? {
+        guard let jsonName = json["name"] as? String,
+            let jsonTime = json["time"] as? Float,
+            let jsonMoves = json["moves"] as? Int else {
+                return nil
+        }
+        let identifier = NSUUID().uuidString
+        let name = jsonName
+        let time = jsonTime
+        let moves = jsonMoves
+        return HighscoreItem(position: nil, name: name, time: time, moves: moves, identifier: identifier)
+    }
     
     func item(with position: Int) -> HighscoreItem {
         return HighscoreItem(position: position, name: name, time: time, moves: moves, identifier: identifier)
@@ -61,12 +73,10 @@ class Highscore {
 }
 
 
-//MARK: Private
+// MARK: Private
 fileprivate extension Highscore {
     func newList(with item : HighscoreItem) -> [HighscoreItem] {
-        return (list + [item]).sorted { $0.time < $1.time }.enumerated().map { index,item in
-            return item.item(with: index)
-        }
+        return (list + [item]).sorted { $0.time < $1.time }.enumerated().map { index,item in item.item(with: index) }
     }
     
     func save(highscore : [HighscoreItem]) {

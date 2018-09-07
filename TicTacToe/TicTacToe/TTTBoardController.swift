@@ -48,9 +48,8 @@ class TTTBoardController: UIViewController {
         checkHighscoreReachability()
         self.state = .started
         self.board.delegate = self
-
-        self.startButton.setTitle(NSLocalizedString("start_button_copy", comment: ""), for: UIControlState())
-        self.machineStartsButton.setTitle(NSLocalizedString("computer_starts_button_copy", comment: ""), for: UIControlState())
+        self.startButton.setTitle(NSLocalizedString("start_button_copy", comment: ""), for:.normal)
+        self.machineStartsButton.setTitle(NSLocalizedString("computer_starts_button_copy", comment: ""), for: .normal)
     }
     
     @IBAction func restart() {
@@ -113,9 +112,9 @@ private extension TTTBoardController {
 
 private extension TTTBoardController {
     func checkHighscoreReachability() {
-        client.getHighScore() { _,error in
+        client.getHighScore { [weak self] _,error in
             if case .none = error {
-                self.showHighScoreButton.isHidden = false
+                self?.showHighScoreButton.isHidden = false
             }
         }
     }

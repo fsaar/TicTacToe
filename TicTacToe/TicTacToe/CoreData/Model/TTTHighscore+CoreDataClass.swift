@@ -68,7 +68,3 @@ public class TTTHighscore: NSManagedObject,Codable {
         self.identifier = dict[CodingKeys.identifier.rawValue] as? String
     }
 }
-
-
-
-

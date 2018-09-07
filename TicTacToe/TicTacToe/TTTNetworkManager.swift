@@ -22,9 +22,9 @@ class TTTNetworkManager {
             completionBlock(nil,TTTNetworkManagerErrorType.InvalidURL(path))
             return
         }
-        let task = self.session.dataTask(with: url, completionHandler: { (data, _, error) -> (Void) in
+        let task = self.session.dataTask(with: url) { data, _, error in
             completionBlock(data,error)
-        })
+        }
         task.resume()
     }
     
@@ -46,5 +46,3 @@ class TTTNetworkManager {
         
     }
 }
-
-

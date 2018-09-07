@@ -7,6 +7,7 @@
 //
 import CoreData
 import Foundation
+import UIKit
 
 class TTTCoreDataStack {
     static let sharedDataStack = TTTCoreDataStack()
@@ -41,10 +42,10 @@ class TTTCoreDataStack {
         storeCoordinator = NSPersistentStoreCoordinator(managedObjectModel: models)
         _ = initCoreData(storeCoordinator)
         
-        self.backgroundNotificationObserver = TTTNotificationObserver(notification: NSNotification.Name.UIApplicationDidEnterBackground.rawValue, handlerBlock: { [weak self] (notification) in
+        self.backgroundNotificationObserver = TTTNotificationObserver(notification: UIApplication.didEnterBackgroundNotification.rawValue) { [weak self] _ in
             self?.privateQueueManagedObjectContext.performAndWait {
                 _ = try? self?.privateQueueManagedObjectContext.save()
             }
-        });
+        }
     }
 }
